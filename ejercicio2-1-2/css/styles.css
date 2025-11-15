@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding-top: 20px;
+    text-align: center;
+    background-image: url("../imgs/old_map.png");
+}
+
+html{
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.header_h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 1.1rem;
+    border-bottom: 6px solid black;
+    background-color: #313B44;
+    text-align: left;
+}
+
+h1{
+    background-image: url("../imgs/logo.png");
+    background-repeat: no-repeat;
+    background-position: 25px center;
+    padding: 20px 100px;
+}
+
+
+nav{
+    font-family: 'Courier New', Courier, monospace;
+    color: silver;
+    font-size: 1.4em;
+    text-align: center;
+    background-image: url("../imgs/red015.jpg");
+    overflow: hidden;
+}
+
+nav li{
+    float: left;
+    list-style: none;
+    margin: 0 100px 20px 100px;
+    padding-top: 80px;
+    background-repeat: no-repeat;
+    background-position: center 10px;
+}
+
+/* ICONOS DEL MENÚ */
+.contenidos{
+    background-image: url("../imgs/book.png");
+}
+
+.videos{
+    background-image: url("../imgs/film.png");
+}
+
+.contacto{
+    background-image: url("../imgs/mail.png");
+}
+
+a{
+    color: orange;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+
+main{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+    background-image: url("../imgs/lgrey008.jpg");
+    height: 502px;
+}
+
+article{
+    width: 240px;
+    border: 1px solid lightgray;
+    background-color: white;
+    text-align: center;
+    line-height: 1.8em;
+    padding: 5px;
+    padding-bottom: 22px;
+    margin: 30px;
+    float: left;
+}
+
+article header{
+    border-bottom: 1px solid #999999;
+}
+
+h2{
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+
+footer{
+    clear: both;
+    color: white;
+    font-size: 0.7em;
+    text-align: center;
+    background-color: #313B44;
+    border-top: 6px solid black;
+    padding: 15px 0;
+}
+
+footer a{
+    color: white;
+}
