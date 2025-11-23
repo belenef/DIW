@@ -1,0 +1,109 @@
+/* reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* contenedor centrado ancho fijo */
+.wrap {
+  width: 980px;         /* pedido por el ejercicio */
+  margin: 18px auto;    /* separación lateral como en la imagen */
+  font-family: Arial, sans-serif;
+  min-height: 90vh;     /* la altura relativa pedida por el enunciado */
+  position: relative;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  height: 56px;                 /* tamaño visual similar a la imagen */
+  background: #39a86a;          /* verde */
+  color: #fff;
+  text-align: center;
+  line-height: 56px;
+  float: left;
+}
+
+/* ASIDE (columna izquierda) */
+.aside {
+  width: 200px;                 /* ancho fijo, como en la imagen */
+  background: #57a6b3;          /* turquesa/azul verdoso */
+  color: rgba(255,255,255,0.95);
+  float: left;
+  padding-top: 3px;            /* texto arriba */
+  min-height: 605px;    
+  text-align: center;        /* suficiente para que llegue hasta el footer dentro del wrap */
+}
+
+/* MAIN (columna derecha) */
+.main {
+  width: 780px;
+  background: #d889e7;
+  float: left;
+  padding: 3px 12px 12px 12px;   /* arriba 0px, resto igual */
+  text-align: center;
+  color: #fff;
+}
+
+
+/* CAJA ROJA que encierra las secciones */
+.red-box {
+  width: 100%;
+  border: 4px solid #e40000;    /* rojo vivo */
+  padding: 18px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  background: transparent;
+}
+
+/* alto fijo para que las proporciones queden idénticas */
+.red-box.top {
+  height: 260px;    /* sección superior: dos rectángulos grandes */
+}
+.red-box.bottom {
+  height: 260px;
+  padding: 30px 0 30px 12px;    /* sección inferior: tres rectángulos iguales */
+}
+
+/* CAJAS AZULES GRANDES (dos en la parte superior) */
+.blue-box.big {
+  width: 48%;
+  height: 100%;
+  float: left;
+  border: 4px solid #0829d9;    /* azul intenso */
+  background: transparent;
+}
+
+/* espacio entre las dos grandes */
+.blue-box.big.left {
+  margin-right: 4%;
+}
+
+/* CAJAS AZULES PEQUEÑAS (tres iguales) */
+.blue-box.small {
+  width: 31%;
+  height: 100%;
+  float: left;
+  border: 4px solid #0829d9;
+  margin-right: 2.25%;
+}
+
+/* eliminar margen derecho en la última */
+.blue-box.small:last-child {
+  margin-right: 0;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  height: 42px;
+  background: #ff8b6d;          /* coral/naranja */
+  color: white;
+  text-align: center;
+  line-height: 42px;
+  float: left;
+}
+
+/* helper clearfix */
+.clear { clear: both; }

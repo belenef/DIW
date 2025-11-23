@@ -1,0 +1,59 @@
+body {
+    background: #F4F4D3;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+
+header {
+    height: 110px;
+    background: #F2B89B;
+    text-align: center;
+    line-height: 110px;
+    font-size: 28px;
+}
+
+
+nav {
+    height: 25px;
+    background: #E6EAA1;
+    text-align: center;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+
+#main {
+    float: left;
+    width: 735px;
+    height: 400px;
+    background: #AEF3F8;
+    text-align: center;
+    line-height: 400px;
+    font-size: 22px;
+}
+
+#sidebar {
+    float: right;
+    width: 245px;
+    height: 400px;
+    background: #C1B7E5;
+    text-align: center;
+    line-height: 400px;
+    font-size: 20px;
+}
+
+
+footer {
+    clear: both;
+    height: 40px;
+    background: #F3B7B2;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+}
