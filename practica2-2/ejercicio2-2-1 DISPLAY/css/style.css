@@ -26,7 +26,7 @@ nav {
     font-size: 16px;
 }
 
-/* COLUMNAS */
+
 .col {
     display: inline-block;
     vertical-align: top;
@@ -51,7 +51,7 @@ nav {
     font-size: 20px;
 }
 
-/* FOOTER */
+
 footer {
     height: 40px;
     background: #F3B7B2;
