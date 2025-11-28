@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding-top: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.nav{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+
+/* GENERAL BOXES */
+.box {
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+.long { height: 30px; }
+.medium { height: 25px; width: 150px; }
+.small { height: 25px; width: 80px; }
+.large { height: 80px; }
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.logo {
+    border: 1px solid black;
+    padding: 5px;
+    padding-right: 80px;
+    margin-left: -20px;
+    border-left: none;
+}
+
+.nav button {
+    border: 1px solid black;
+    background: none;
+    padding: 4px 12px;
+    margin-left: 5px;
+}
+
+/* SECTIONS */
+.section {
+    border: 1px solid black;
+    display: flex;
+    padding: 20px;
+}
+
+/* TWO-COLUMN SECTIONS */
+.section-1 .left,
+.section-1 .right,
+.section-2 .left,
+.section-2 .right,
+.section-3 .left,
+.section-3 .right {
+    flex: 1;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+/* ROW INSIDE (For two boxes inline) */
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+/* SECTION 4: CARDS */
+.section-4 {
+    flex-direction: column;
+}
+
+.title {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card {
+    border: 1px solid black;
+    width: 28%;
+    padding: 15px;
+}
+
+.card .img {
+    height: 300px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+/* SECTION 5: CENTER */
+.section-5 {
+    justify-content: center;
+}
+
+.center-box {
+    border: 1px solid black;
+    padding: 30px;
+    width: 50%;
+}
+
+/* SECTION 6: GRID */
+.grid {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.column {
+    width: 23%;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+/* FOOTER */
+.footer {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer .box {
+    width: 48%;
+    height: 35px;
+}

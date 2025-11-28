@@ -1,0 +1,118 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html{
+    background-color: #fff;
+    
+}
+body{
+    padding-top: 20px;
+    text-align: center;
+    /* background-image: url("../imgs/old_map.png"); */
+    background: linear-gradient(to bottom, rgb(227, 76, 38) 0%,  rgba(240, 101, 41, 0%) 90%);
+}
+#contenedor{
+    width: 960px;
+    margin: 0px auto;
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 0px gray;
+}
+header{
+    color: white;
+    font: 1.1em Courier;
+    border-bottom: 6px black solid;
+    background-color: #313B44;
+    background: linear-gradient(to bottom, #0170B9 ,  #27AADE );
+    border-top-left-radius: 20px;   /* redondeo superior */
+    border-top-right-radius: 20px;
+}
+h1{
+    background-image: url("../imgs/logo.png");
+    background-repeat: no-repeat;
+    background-position: 25px center;
+    padding: 20px 100px;
+}
+nav{
+    font-family: Courier;
+    font-size: 1.4em;
+	color: silver;
+    text-align: center;
+    /* background: url("../imgs/red015.jpg"); */
+    background: linear-gradient(to bottom, rgb(213, 186, 50),  rgb(255, 218, 62));
+}
+nav ul li {
+    padding-top: 80px;
+    /* padding: 80px 0px 0px 0px;  Tambien sirve*/
+    margin: 0px 100px 20px 100px;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    cursor: default;
+}
+#contenidos{
+    background-image: url("../imgs/book.png");
+    background-repeat: no-repeat;
+    background-position: center 10px;
+}
+#videos{
+    background-image: url("../imgs/film.png");
+    background-repeat: no-repeat;
+    background-position: center 10px;
+}
+#contacto{
+    background-image: url("../imgs/mail.png");
+    background-repeat: no-repeat;
+    background-position: center 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover {
+    color: orange;
+}
+section{
+    font-family: Verdana;
+	font-size: 0.8em;
+    /* background-image: url("../imgs/lgrey008.jpg"); */
+    background-color: white;
+    height: 605px;
+}
+article {
+    width: 240px;
+    text-align: center;
+    line-height: 1.8em;
+    border-width: 70px 20px 64px 22px;
+    border-style: solid;
+    border-image: url("../imgs/movil.png") 70 20 64 22;   
+    padding:5px 5px 22px 5px;             
+    margin: 14px;
+    float: left;
+}
+
+.article_header {
+    border-bottom: 1px solid #999999;
+}
+h2{
+    padding: 10px;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 2px gray;
+}
+footer{
+    clear: both;
+    font-size: 0.7em;
+    color: white;
+    text-align: center;
+    background-color: #313B44;
+    border-top: 6px black solid;
+    padding: 15px 0px;
+    background: linear-gradient(to bottom,  #27AADE, #0170B9);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+footer a {
+    color: white;
+}
