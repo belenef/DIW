@@ -1,144 +1,246 @@
+/* ================= GLOBAL ================= */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: solid 1px black;
 }
 
-body {
-    font-family: sans-serif;
-    padding-top: 20px;
-    text-align: center;
-    margin: 20px;
+html, body {
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+  background: white;
+  font-family: Arial, sans-serif;
 }
 
-.nav{
-    border: 1px solid black;
-    padding: 10px;
+.wrapper {
+  width: 1920px;
+  margin: 0 auto;
+  background: white;
 }
 
-
-
-/* GENERAL BOXES */
-.box {
-    border: 1px solid black;
-    margin: 10px 0;
-}
-
-.long { height: 30px; }
-.medium { height: 25px; width: 150px; }
-.small { height: 25px; width: 80px; }
-.large { height: 80px; }
-
-/* HEADER */
+/* ================= HEADER ================= */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid black;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  justify-content: space-between;
 }
-
 .logo {
-    border: 1px solid black;
-    padding: 5px;
-    padding-right: 80px;
-    margin-left: -20px;
-    border-left: none;
+  width: 100px;
+  height: 20px;
 }
-
+.nav {
+  display: flex;
+  gap: 8px;
+}
 .nav button {
-    border: 1px solid black;
-    background: none;
-    padding: 4px 12px;
-    margin-left: 5px;
+  width: 70px;
+  height: 20px;
+  background: transparent;
+  border: none;
 }
 
-/* SECTIONS */
-.section {
-    border: 1px solid black;
-    display: flex;
-    padding: 20px;
+/* ================= SECCIÓN TOP ================= */
+.section-top {
+  width: 100%;
+  height: 540px;
+  display: flex;
+}
+.top-left {
+  width: 50%;
+  padding: 40px;
+}
+.bar1 { width: 350px; height: 20px; margin-bottom: 14px; }
+.bar2 { width: 520px; height: 22px; margin-bottom: 14px; }
+.bar3 { width: 480px; height: 22px; margin-bottom: 14px; }
+.row { display: flex; gap: 12px; }
+.bar4 { width: 180px; height: 20px; }
+.bar5 { width: 260px; height: 20px; }
+.top-right {
+  width: 50%;
 }
 
-/* TWO-COLUMN SECTIONS */
-.section-1 .left,
-.section-1 .right,
-.section-2 .left,
-.section-2 .right,
-.section-3 .left,
-.section-3 .right {
-    flex: 1;
-    border: 1px solid black;
-    padding: 20px;
+/* ================= SECCIÓN MID ================= */
+.section-mid {
+  width: 100%;
+  height: 520px;
+  display: flex;
 }
-
-/* ROW INSIDE (For two boxes inline) */
-.row {
-    display: flex;
-    gap: 20px;
+.mid-left { width: 50%; }
+.mid-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-/* SECTION 4: CARDS */
-.section-4 {
-    flex-direction: column;
+.form-box {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.form-title { width: 220px; height: 60px; margin-bottom: 20px; }
+.form-line { width: 360px; height: 22px; margin-bottom: 12px; }
 
-.title {
-    width: 40%;
-    margin: 0 auto;
+/* ================= SECCIÓN MID2 ================= */
+.section-mid2 {
+  width: 100%;
+  height: 420px;
+  display: flex;
 }
-
-.cards {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+.mid2-left {
+  width: 50%;
+  padding: 40px 80px;
 }
+.m2-title { width: 380px; height: 50px; margin-bottom: 16px; }
+.m2-line { width: 360px; height: 22px; margin-bottom: 16px; }
+.m2-small { width: 120px; height: 20px; }
+.mid2-right { width: 50%; }
 
+/* ================= SECCIÓN CARDS ================= */
+.section-cards {
+  width: 100%;
+  height: 520px;
+  padding-top: 20px;
+}
+.cards-topbar {
+  width: 300px;
+  height: 20px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+.cards-row {
+  width: 100%;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
 .card {
-    border: 1px solid black;
-    width: 28%;
-    padding: 15px;
+  width: 500px;
+  height: 360px;
+  padding: 20px;
+}
+.thumb { width: 100%; height: 230px; margin-bottom: 16px; }
+.text-line { width: 100%; height: 20px; margin-bottom: 10px; }
+.text-small { width: 100px; height: 18px; }
+
+/* ================= SECCIÓN BANNER ================= */
+.section-banner {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-inner {
+  width: 600px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-box {
+  width: 400px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.b-line { width: 300px; height: 20px; margin-bottom: 8px; }
+
+/* ================= SECCIÓN GRID (REVISADA) ================= */
+/* Esta sección ha sido ajustada para coincidir exactamente con la maqueta. */
+.section-grid {
+  width: 100%;
+  /* altura total que ocupa en la maqueta */
+  height: 480px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.card .img {
-    height: 300px;
-    border: 1px solid black;
-    margin-bottom: 15px;
+/* línea fina superior justo encima del bloque grande (se aprecia en la imagen) */
+.section-grid .top-sep {
+  width: 100%;
+  height: 18px;
 }
 
-/* SECTION 5: CENTER */
-.section-5 {
-    justify-content: center;
+/* bloque principal con columnas y filas (bordes visibles por outline) */
+.grid-main {
+  width: 100%;
+  height: 250px; /* caja grande que contiene los 4 paneles con varias filas */
+  display: flex;
+  padding: 18px 28px 12px 28px; /* separaciones internas que coinciden con la maqueta */
+  gap: 16px;
+}
+.grid-col {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 6px;
 }
 
-.center-box {
-    border: 1px solid black;
-    padding: 30px;
-    width: 50%;
+/* cada fila dentro de la columna (pequeñas celdas horizontales) */
+.grid-col .g-row {
+  height: 34px;
+  width: 100%;
+  margin-bottom: 0;
 }
 
-/* SECTION 6: GRID */
-.grid {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+/* barra horizontal que separa la zona superior de la inferior dentro de la sección grid */
+.grid-divider {
+  width: 100%;
+  height: 12px;
 }
 
-.column {
-    width: 23%;
-    border: 1px solid black;
-    padding: 15px;
+/* Fila inferior grande (rectángulo con borde y dentro otra barra centrada) */
+.grid-bottom-area {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+}
+.grid-bottom-inner {
+  width: 80%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-bottom-inner .inner-bar {
+  width: 360px;
+  height: 36px;
 }
 
-/* FOOTER */
+/* última franja muy delgada con dos rectángulos pequeños a los lados (antes del footer) */
+.grid-last {
+  width: 100%;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 40px;
+}
+.grid-last .left-short { width: 260px; height: 20px; }
+.grid-last .right-short { width: 260px; height: 20px; }
+
+/* ================= FOOTER ================= */
 .footer {
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
 }
-
-.footer .box {
-    width: 48%;
-    height: 35px;
-}
+.f-left { width: 380px; height: 26px; }
+.f-right { width: 360px; height: 26px; }
