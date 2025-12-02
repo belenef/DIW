@@ -1,0 +1,307 @@
+/* ============== RESET ============== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #111;
+    padding: 40px 60px;
+    line-height: 1.4;
+}
+
+/* ============== HEADER ============== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo-box img {
+    width: 60px;
+}
+
+.logo-text h2 {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.logo-text p {
+    font-size: 12px;
+    color: #666;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background: rgb(102, 11, 225);
+    padding: 10px 18px;
+    border-radius: 10px;
+    color: #fff !important;
+}
+
+.login {
+    opacity: 0.7;
+}
+
+/* ============== HERO ============== */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.hero-text {
+    max-width: 460px;
+}
+
+.tag {
+    color: rgb(102, 11, 225);
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.05;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 26px;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-big {
+    background: rgb(102, 11, 225);
+    padding: 14px 24px;
+    border-radius: 12px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.stores img {
+    width: 160px;
+}
+
+.hero-img img {
+    width: 340px;
+}
+
+/* ============== STEPS ============== */
+.steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.step {
+    width: 30%;
+}
+
+.step h3 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* ============== FEATURE: TU DECIDES ============== */
+.feature-block {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature-text {
+    max-width: 450px;
+}
+
+.feature-text h2 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.feature-text h3 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.feature-text p {
+    opacity: 0.8;
+    margin-bottom: 24px;
+}
+
+.feature-img img {
+    width: 360px;
+}
+
+.btn-line {
+    font-weight: 700;
+    color: rgb(102, 11, 225);
+    text-decoration: none;
+}
+
+/* ============== FEATURE: CRECE TU DINERO ============== */
+.growth-block {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.growth-img img {
+    width: 360px;
+}
+
+.growth-text {
+    max-width: 460px;
+}
+
+.growth-text h2 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.growth-text p {
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+/* ============== EDUCACIÓN FINANCIERA ============== */
+.education {
+    margin-top: 140px;
+}
+
+.education h2 {
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.education .sub {
+    opacity: 0.8;
+    margin-top: 4px;
+    margin-bottom: 40px;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+    gap: 26px;
+}
+
+.card {
+    width: 30%;
+    border: 1px solid #eee;
+    padding: 22px;
+    border-radius: 14px;
+}
+
+.card .meta {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.card a {
+    font-weight: 700;
+    color: rgb(102, 11, 225);
+    text-decoration: none;
+}
+
+/* ============== CTA FINAL ============== */
+.cta-final {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.cta-final p {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* ============== FOOTER ============== */
+.footer {
+    border-top: 1px solid #eee;
+    padding-top: 50px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: #333;
+    opacity: 0.8;
+}
+
+.footer-right p {
+    margin-bottom: 6px;
+    opacity: 0.8;
+    margin-left: 20px;
+    float: right;
+}
+
+.footer-links {
+    margin-top: 12px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: rgb(102, 11, 225);
+    margin-right: 14px;
+    font-size: 14px;
+}
