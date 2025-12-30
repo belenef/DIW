@@ -1,0 +1,15 @@
+Download your package: Favicon package
+
+Extract this package in <web site>/imagenes/iconos/. If your site is http://www.example.com, you should be able to access a file named http://www.example.com/imagenes/iconos/favicon.ico.
+
+Insert the following code in the <head> section of your pages:
+<link rel="apple-touch-icon" sizes="180x180" href="/imagenes/iconos/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/imagenes/iconos/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/imagenes/iconos/favicon-16x16.png">
+<link rel="manifest" href="/imagenes/iconos/manifest.json">
+<link rel="mask-icon" href="/imagenes/iconos/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/imagenes/iconos/favicon.ico">
+<meta name="msapplication-config" content="/imagenes/iconos/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+Optional - Once your web site is deployed, check your favicon.
