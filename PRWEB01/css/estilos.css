@@ -1534,7 +1534,7 @@ header #logo{
     }
 
     .seccion_5 .proyecto {
-        width: calc(50% - 0.5rem);
+        width: calc(25% - 1rem); /*numero de columnas de las imagenes*/
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1549,7 +1549,7 @@ header #logo{
     }
 
     .seccion_5 .proyecto img {
-        width: 100%;
+        width: 75%;
         height: auto;
         border-radius: 0.5rem;
     }
@@ -1686,10 +1686,11 @@ header #logo{
     /* CONTENIDO DE 'nosotros.html' */
     .seccion_1 .nosotros_p{
         margin-top: 3rem ;
-        margin-bottom: 9rem;
+        margin-bottom: 3rem;
     }
     .seccion_1 .h1_nosotros{
         margin-top: 20rem ;
+        margin-bottom: -3rem;
     }
     .seccion_1 .btn-nosotros{
         margin-bottom: 18rem;
@@ -1719,13 +1720,13 @@ header #logo{
         font-size: 1.8rem;
         font-weight: 550;
         margin-bottom: 0.5rem;
-        margin-left: 6rem;
-        margin-right: 6rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
     }
     .nosotros-seccion_2 p{
-        margin-left: 6rem;
-        margin-right: 6rem;
-        font-size: 1.5rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
+        font-size: 1.7rem;
         margin-bottom: 0.6rem;
     }
     .contenedor-img {
@@ -1743,8 +1744,33 @@ header #logo{
         justify-content: center;
         background-color: var(--color-secundario);
         padding: 2rem;
-        padding-left: 5rem;
-        padding-right: 5rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        width: 100%;
+    }
+
+    /* areas */
+    #sistemas{
+        margin-top: -6.2rem;
+        /* padding-bottom: 8.5rem; */
+    }
+    #desarrollo{
+        margin-top: -0.8rem;
+        /* padding-bottom: 3.2rem; */
+    }
+    #Soporte{
+        margin-top: -10.5rem;
+        /* padding-bottom: 13rem; */
+    }
+
+    /* GRID DE 3 COLUMNAS */
+    .servicios-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        width: 100%;
+        padding: 2rem;
+        background-color: var(--color-secundario);  /* fondo azul */
     }
 
     .servicios-seccion_2-inner {
@@ -1774,7 +1800,7 @@ header #logo{
     .servicios-seccion_2 p {
         color: var(--color-primario);
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         margin: 0.5rem 0 1rem -1;
     }
 
@@ -1784,6 +1810,7 @@ header #logo{
         padding: 1rem;
         width: 100%;
         margin-left: 3.5rem;
+        font-size: 1.2rem;
     }
 
     .servicios-seccion_2 .contenedor_p-servicios ul {
