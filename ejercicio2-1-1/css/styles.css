@@ -1,0 +1,136 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    padding-top: 20px;
+    text-align: center;
+    background-image: url("../imgs/old_map.png");
+}
+
+html{
+    width:  960px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    text-align: left;
+}
+
+#header{
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    font-size: 1.1rem;
+    border-bottom: 6px black solid;
+    background-color: #313B44;
+    text-align: left;
+}
+
+h1{
+    background-image: url( "../imgs/logo.png");
+    background-repeat: no-repeat;
+    background-position: 25px center;
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+}
+
+#nav{
+    font-family: 'Courier New', Courier, monospace;
+    color: silver;
+    font-size: 1.4em;
+    text-align: center;
+    background-image: url("../imgs/red015.jpg");
+    overflow: hidden;
+    
+    
+}
+
+#nav li{
+    float: left;
+    padding-top: 80px;
+    margin: 0px 100px 20px 100px;
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    cursor:default;
+}
+
+/* ICONOS DEL MENÚ */
+#Contenidos{
+    background-image:  url("../imgs/book.png");
+    background-repeat: no-repeat;
+    display: inline;
+    background-position:center 10px;
+}
+
+#Videos{
+    background-image:  url("../imgs/film.png");
+    background-repeat: no-repeat;
+    display: inline;
+    background-position:center 10px;
+}
+
+#Contacto{
+    background-image:  url("../imgs/mail.png");
+    background-repeat: no-repeat;
+    display: inline;
+    background-position:center 10px;
+}
+
+a{
+    color: orange;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+#content{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+    background-image: url( "../imgs/lgrey008.jpg");
+    height: 502px;
+}
+
+article{
+    width: 240px;
+    border: 1px lightgray solid;
+    background-color: white;
+    text-align: center;
+    line-height: 1.8em;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 22px;
+    padding-left: 5px;
+    margin: 30px;
+    float: left;
+}
+
+.article_header {
+    border-bottom: 1px solid #999999;
+}
+
+h2{
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+#footer{
+    display: block;
+    clear: both;
+    color:white;
+    font-size: 0.7em;
+    text-align: center;
+    background-color: #313B44;
+    border-top: 6px black solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#footer a{
+    color: white;
+}

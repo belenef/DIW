@@ -1,0 +1,420 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #111;
+    padding: 0;
+    line-height: 1.4;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 60px;
+}
+
+/* ============== HEADER ============== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo-box img {
+    width: 60px;
+}
+
+.logo-text h2 {
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.logo-text p {
+    font-size: 12px;
+    color: #666;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav a:hover { color: rgb(102, 11, 225); }
+
+.btn-primary {
+    background: rgb(102, 11, 225);
+    padding: 10px 18px;
+    border-radius: 10px;
+    color: #fff !important;
+}
+
+.login {
+    opacity: 0.7;
+}
+
+/* ============== HERO ============== */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    gap: 30px;
+}
+
+.hero-text {
+    max-width: 460px;
+}
+
+.tag {
+    color: rgb(102, 11, 225);
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.title {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 1.02;
+    margin-bottom: 18px;
+}
+
+.subtitle {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 26px;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-big {
+    background: rgb(102, 11, 225);
+    padding: 14px 24px;
+    border-radius: 12px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.stores img {
+    width: 160px;
+}
+
+.hero-img img {
+    width: 640px;
+}
+
+.hero-img img { display: block; }
+
+/* ============== STEPS ============== */
+.steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    gap: 20px;
+}
+
+.step {
+    width: 30%;
+}
+
+.step h3 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* ============== TU DECIDES ============== */
+.feature-block {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.feature-text {
+    max-width: 450px;
+}
+
+.feature-text h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.feature-text h3 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.feature-text p {
+    opacity: 0.8;
+    margin-bottom: 24px;
+}
+
+.feature-img img {
+    width: 360px;
+}
+
+.feature-img img { display: block; }
+
+.btn-line {
+    font-weight: 700;
+    color: rgb(102, 11, 225);
+    text-decoration: none;
+}
+
+/* ============== CRECE TU DINERO ============== */
+.growth-block {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.growth-img img {
+    width: 360px;
+}
+
+.growth-text {
+    max-width: 460px;
+}
+
+.growth-text h2 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.growth-text p {
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+/* ============== EDUCACIÓN FINANCIERA ============== */
+.education {
+    margin-top: 100px;
+}
+
+.education h2 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.education .sub {
+    opacity: 0.8;
+    margin-top: 4px;
+    margin-bottom: 40px;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+    gap: 26px;
+}
+
+.card {
+    width: 30%;
+    border: 1px solid #eee;
+    padding: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    display: block;
+    background: #f5f5f5;
+}
+
+.card > p,
+.card > h3,
+.card > a {
+    padding: 0 22px;
+}
+
+.card > p:first-of-type {
+    padding-top: 22px;
+}
+
+.card > a {
+    padding-bottom: 22px;
+}
+
+.card .meta {
+    color: #777;
+    font-size: 13px;
+    margin: 0 0 10px 0;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 0 0 12px 0;
+    flex: 1;
+}
+
+.card a {
+    font-weight: 700;
+    color: rgb(102, 11, 225);
+    text-decoration: none;
+    margin: 0;
+}
+
+/* ============== CTA FINAL ============== */
+.cta-final {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.cta-final p {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* ============== CAJA ABRE TU CUENTA HOY ============== */
+.promo {
+    background: linear-gradient(180deg, #6f15ff 0%, #5b10ff 60%);
+    color: #fff;
+    border-radius: 18px;
+    padding: 48px 40px;
+    text-align: center;
+}
+.promo-title {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+.promo-sub {
+    opacity: 0.95;
+    margin-bottom: 22px;
+    font-size: 18px;
+}
+.promo-form { display:flex; justify-content:center; }
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    max-width: 640px;
+    width: 100%;
+    gap: 10px;
+}
+.input-group input {
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    flex: 1;
+    font-size: 16px;
+}
+.btn-primary-outline {
+    background: linear-gradient(180deg, #7d25ff 0%, #6120ff 100%);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 2px solid rgba(255,255,255,0.6);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.promo .stores img { width: 120px; }
+
+/* ============== FOOTER ============== */
+.footer {
+    border-top: 1px solid #eee;
+    padding-top: 50px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: #333;
+    opacity: 0.8;
+}
+
+.footer-col .socials {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+.footer-col .socials a {
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+}
+.footer-col .socials a:hover { color: rgb(102, 11, 225); }
+
+.footer-right p {
+    margin-bottom: 6px;
+    opacity: 0.8;
+    margin-left: 20px;
+    float: right;
+}
+
+.footer-links {
+    margin-top: 12px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: rgb(102, 11, 225);
+    margin-right: 14px;
+    font-size: 14px;
+}
+
+/* disposición de las imágenes de las apps del hero (la primera seccion de la web) y apilamiento del botón */
+.hero-cta { flex-direction: column; align-items: flex-start; }
+.hero-cta .stores { display: flex; gap: 12px; margin-top: 12px; }
+.hero-cta .stores img { width: 140px; }
+
