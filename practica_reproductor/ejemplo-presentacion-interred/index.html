@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>presentación</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body id="cuerpo">
+    <!-- Genero con JS un retardo de medio segundo antes de empezar nada para que carge todo-->
+    <script>
+        function syncDelay(milliseconds) {
+            var start = new Date().getTime();
+            var end = 0;
+            while ((end - start) < milliseconds) {
+                end = new Date().getTime();
+            }
+        }
+
+        console.log("Before the delay")
+        syncDelay(5000);
+        console.log("After the delay")
+    </script>
+    <!-- Pongo todos los elementos (tendrán opacity=0) -->
+    <div id="acgrande"></div>
+    <div id="bounceInRight"></div>
+    <div id="barra"></div>
+    <div class="bichos">
+        <div id="uno"></div>
+        <div id="dos"></div>
+        <div id="tres"></div>
+        <div id="cuatro"></div>
+        <div id="cinco"></div>
+        <div id="seis"></div>
+    </div>
+    <div id="puzz1"></div>
+    <div id="puzz2"></div>
+    <div id="puzz3"></div>
+    <div id="puzz4"></div>
+    <div id="texto"></div>
+    <script>
+
+        function borratodo() {
+            document.getElementById("cuerpo").style.opacity = "0";
+        }
+        function saletexto() {
+            document.getElementById("texto").className = "emergetexto";
+            // setTimeout(borratodo, 5000);
+        }
+        function salep4() {
+            document.getElementById("puzz4").className = "puzzles4";
+            // Encadena con la siguiente
+            setTimeout(saletexto, 5000);
+        }
+        function salep3() {
+            document.getElementById("puzz3").className = "puzzles3";
+            // Encadena con la siguiente
+            setTimeout(salep4, 1000);
+        }
+        function salep2() {
+            document.getElementById("puzz2").className = "puzzles2";
+            // Encadena con la siguiente
+            setTimeout(salep3, 1000);
+        }
+        function salep1() {
+            document.getElementById("puzz1").className = "puzzles1";
+            // Encadena con la siguiente
+            setTimeout(salep2, 1000);
+        }
+        function saleseis() {
+            document.getElementById("seis").className = "bounceInUp";
+            // Encadena con la siguiente
+            setTimeout(salep1, 1000);
+        }
+        function salecinco() {
+            document.getElementById("cinco").className = "bounceInUp";
+            // Encadena con la siguiente
+            setTimeout(saleseis, 1000);
+        }
+        function salecuatro() {
+            document.getElementById("cuatro").className = "bounceInUp";
+            // Encadena con la siguiente
+            setTimeout(salecinco, 1000);
+        }
+        function saletres() {
+            document.getElementById("tres").className = "bounceInUp";
+            // Encadena con la siguiente
+            setTimeout(salecuatro, 1000);
+        }
+        function saledos() {
+            document.getElementById("dos").className = "bounceInUp";
+            // Encadena con la siguiente
+            setTimeout(saletres, 1000);
+        }
+        function saleuno() {
+            document.getElementById("uno").className = "bounceInUp";
+            // Encadena con la siguiente
+            setTimeout(saledos, 1000);
+        }
+        function despliega() {
+            document.getElementById("barra").style.width = "100%";
+            // Encadena con la siguiente
+            setTimeout(saleuno, 1000);
+        }
+        // Inicia la primera animación con un temporizador
+        setTimeout(despliega, 5000);</script>
+</body>
+</html>

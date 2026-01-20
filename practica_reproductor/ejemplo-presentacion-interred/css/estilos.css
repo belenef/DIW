@@ -1,0 +1,392 @@
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+@keyframes anmacgrande {
+    0% {
+
+        height: 0px;
+    }
+
+    55% {
+
+        height: 90vh;
+        background-position: center;
+
+    }
+
+    70% {
+        height: 12vh;
+    }
+
+    100% {
+        position: relative;
+        left: 3%;
+        top: 2vh;
+        /* left: 18px;
+        top: 12px; */
+    }
+}
+
+
+#acgrande {
+    background-image: url("../imgs/logo.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    left: 3%;
+    top: 2vh;
+    /* left: 18px;
+    top: 12px; */
+    height: 11vh;
+    animation-name: anmacgrande;
+    animation-duration: 16s;
+
+}
+
+@keyframes anmmedio-logo {
+    0% {
+        opacity: 0;
+        transform: translateX(2000px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateX(-30px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#bounceInRight {
+    background-image: url("../imgs/medio-logo.png");
+    background-repeat: no-repeat;
+    position: relative;
+    /* left: 110px;
+    top: -78px; */
+    left: 9%;
+    top: -9vh;
+    height: 12vh;
+    /* width: 20%;
+    height: 20vh; */
+    animation-name: anmmedio-logo;
+    animation-duration: 16s;
+}
+
+#barra {
+    width: 0px;
+    /* width: 100%; */
+    height: 3px;
+    background: #0072AA;
+    position: absolute;
+    left: 0px;
+    top: 16vh;
+    transition: width 8s linear 1s;
+}
+
+
+@keyframes bounceInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(2000px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    80% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bounceInUp {
+    animation: 1s bounceInUp 1;
+    opacity: 1 !important;
+}
+
+
+.bichos {
+    position: absolute;
+    /* left: 900px; */
+    left: 54%;
+    top: 0px;
+    /* background-color: aqua; */
+    width: 40%;
+    height: 16vh;
+
+}
+
+#uno {
+    background-image: url("../imgs/uno.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 0px;
+    top: 2vh;
+    height: 12vh;
+    /* width: auto; */
+    opacity: 0;
+}
+
+#dos {
+    background-image: url("../imgs/dos.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 20%;
+    top: -10vh;
+    height: 12vh;
+    opacity: 0;
+}
+
+#tres {
+    background-image: url("../imgs/tres.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 35%;
+    top: -22vh;
+    height: 12vh;
+    opacity: 0;
+}
+
+#cuatro {
+    background-image: url("../imgs/cuatro.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 54%;
+    top: -34vh;
+    height: 12vh;
+    opacity: 0;
+}
+
+#cinco {
+    background-image: url("../imgs/cinco.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 74%;
+    top: -46vh;
+    height: 12vh;
+    opacity: 0;
+}
+
+#seis {
+    background-image: url("../imgs/seis.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 96%;
+    top: -58vh;
+    height: 12vh;
+    opacity: 0;
+}
+@keyframes puzzle1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-2000px);
+        transform: translateX(-2000px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(30px);
+        transform: translateX(30px);
+    }
+
+    80% {
+        transform: translateY(-10px);
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+}
+.puzzles1 {
+    animation: 1s puzzle1 1;
+    opacity: 0.6 !important;
+}
+#puzz1 {
+    /* background-color: aqua; */
+    height: 45vh;
+    width: 50%;
+    background-image: url("../imgs/fondo-interred-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    left: -1%;
+    top: -7.5vh;
+    opacity: 0;
+}
+@keyframes puzzle2 {
+    0% {
+        opacity: 0;
+        transform: translateY(2000px);
+        transform: translateX(-2000px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(-30px);
+        transform: translateX(30px);
+    }
+
+    80% {
+        transform: translateY(10px);
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+}
+.puzzles2 {
+    animation: 1s puzzle2 1;
+    opacity: 0.6 !important;
+}
+#puzz2 {
+    /* background-color: aqua; */
+    height: 45vh;
+    width: 63%;
+    background-image: url("../imgs/fondo-servicios-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    left: 45%;
+    top: -52.5vh;
+    opacity: 0;
+}
+@keyframes puzzle3 {
+    0% {
+        opacity: 0;
+        transform: translateY(-2000px);
+        transform: translateX(2000px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(30px);
+        transform: translateX(-30px);
+    }
+
+    80% {
+        transform: translateY(-10px);
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+}
+.puzzles3 {
+    animation: 1s puzzle3 1;
+    opacity: 0.6 !important;
+}
+#puzz3 {
+    /* background-color: aqua; */
+    height: 46vh;
+    width: 63%;
+    background-image: url("../imgs/web-cursoredes-grande.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    left: -1%;
+    top: -59.5vh;
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+}
+@keyframes puzzle4 {
+    0% {
+        opacity: 0;
+        transform: translateY(2000px);
+        transform: translateX(2000px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(-30px);
+        transform: translateX(-30px);
+    }
+
+    80% {
+        transform: translateY(10px);
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+}
+.puzzles4 {
+    animation: 1s puzzle4 1;
+    opacity: 0.6 !important;
+}
+#puzz4 {
+    /* background-color: aqua; */
+    height: 46vh;
+    width: 63%;
+    background-image: url("../imgs/web-cursoweb-grande.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    left: 50%;
+    top: -100.5vh;
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+}
+@keyframes animtexto {
+    0% {
+        height: 0vh;
+        width: 0%;
+        opacity: 0;
+    }
+
+    50% {
+        height: 80vh;
+        width: 90%;
+        opacity: 1;
+    }
+
+    100% {
+        height: 0vh;
+        width: 0%;
+        opacity: 0;
+    }
+}
+.emergetexto {
+    animation: 10s animtexto 1;
+    /* opacity: 0.6 !important; */
+}
+#texto {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../imgs/logo-interred-c03.svg");
+    background-repeat: no-repeat;
+    position: fixed;
+    left: 0%;
+    top: 15vh;
+    z-index: 10;
+    opacity: 0;
+}

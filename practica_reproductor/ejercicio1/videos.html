@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UD3-PRACTICA-1-Ejercicio-2</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <h1><img src="imgs/logo.png">Curso de HTML5 y CSS3</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Contenidos</a></li>
+                <li><a href="#">Vídeos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <section id="sec-rep">
+            <div id="reproductor">
+                <video id="medio" width="720" height="400">
+                    <source src="media/media/trailer.mp4" />
+                    <source src="media/media/trailer.ogg" />
+                </video>
+                <div id="barra">
+                    <div id="progreso"></div>
+                </div>
+            </div>
+            <nav>
+                <input type="button" id="reiniciar" value="reiniciar" />
+                <input type="button" id="retrasar" value="&laquo;" />
+                <input type="button" id="play" value="&#9658;" />
+                <input type="button" id="adelantar" value="&raquo;" />
+                <input type="button" id="silenciar" value="silenciar" />
+                <label>Volumen</label>
+                <input type="button" id="menosVolumen" value="-" />
+                <input type="button" id="masVolumen" value="+" />
+            </nav>
+        </section>
+        <footer>
+            <p>Alejandro Amat Reina © 2014. Curso de HTML5 y CSS3.</p>
+            <p>Impartido para: <a href="http://cefire.edu.gva.es"> CEFIRE - Específico de Formación
+                    Profesional</a></p>
+        </footer>
+    </div>
+    <script src="../reproductor.js"></script>
+</body>
+
+</html>
