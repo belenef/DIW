@@ -1,0 +1,115 @@
+
+/* fuente importada de google fonts */
+.macondo-regular {
+  font-family: "Macondo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    background-color: #f8f9fa;
+    font-family: "Macondo", cursive;
+    background-image: url('../imgs/fondo2.jpg');
+    background-size: cover;
+    background-position: engine;
+    background-attachment: fixed;
+    height: 90vh;
+}
+header{
+    background-color: #333333;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10rem;
+    margin: 2rem;
+}
+
+header h1{
+    margin: 0;
+}
+
+#logo{
+    height: 3.5rem;
+    margin: 1rem;
+}
+
+/* menu de navegacion */
+.menu{
+    margin-left: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-right: 2rem;
+}
+
+/* enlaces del menu de navegacion */
+.menu a{
+    margin: 0.7rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: "Macondo", cursive;
+}
+
+.menu a:hover{
+    background-color: #F2C9D5;
+    color: #333333;
+    padding: 10px;
+    border-radius: 2rem;
+}
+
+.intro{
+    height: 90vh;
+    margin-top: -1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px #333333;
+}
+
+.intro h1{
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* boton de la pagina de inicio */ 
+.btn-primary{
+    background-color: #333333;
+    border: none;
+    padding: 10px 20px;
+    color:  #F2C9D5;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: "Macondo", cursive;
+    font-weight: bold;
+}
+
+.seccion2{
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.seccion2 .texto-seccion2{
+    margin-right: 2rem;
+}
