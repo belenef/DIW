@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Japonés</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+<body>
+    <header>
+        <img src="imgs/sakura.svg" alt="Logo Restaurante Japonés Sakura" id="logo">
+        <h1>Restaurante Japonés Sakura</h1>
+
+         <!-- MENÚ DE NAVEGACION DE LA PÁGINA -->
+        <nav class="menu">
+                <a href="index.html">INICIO</a>
+                <a href="nosotros.html">NOSOTROS</a>
+                <a href="servicios.html">COCINA</a>
+                <a href="webs.html">MENÚ</a>
+                <a href="contacto.html">CONTACTO</a>
+        </nav>
+
+        <!-- EN ESTE MENU SE HA COGIDO DE UN SITIO WEB -->
+        <div class="respmenu">
+            <input type="checkbox">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+            <nav>
+                <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">NOSOTROS</a></li>
+                <li><a href="#">COCINA</a></li>
+                <li><a href="#">MENÚ</a></li>
+                <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class="intro">
+            <h1>¡Contáctanos!</h1>
+            <p>Estamos aquí para escucharte.</p>
+            <a href="contacto.html">
+            <button class="btn-primary">Descubre más</button>
+            </a>    
+        </div>
+
+        <!-- SECCION 2 - SOBRE EL RESTAURANTE
+        --------------------------------------- -->
+
+        <!-- FORMULARIO -->
+        <div class="contacto">
+            <h1>Formulario de contacto</h1>
+            <div class="formulario_contacto">
+                <form action="#" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Introduce un mensaje" required></textarea>
+
+                    <div class="botones">
+                    <button type="submit" class="btn-primary">Enviar</button>
+                    <button type="reset" class="btn-primary">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div>
+                <h2>¿Dónde nos encontramos?</h2>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49305.489098662765!2d-0.5655773779292645!3d39.4333254830379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6051c6c56cfbf7%3A0x342b9d1e78f763c!2sIES%20Serra%20Perenxisa!5e0!3m2!1sen!2ses!4v1769109884801!5m2!1sen!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+    <!-- Ícono de flecha hacia arriba -->
+    <a href="#" id="flecha-arriba" class="flecha-arriba">
+        <i class="fas fa-arrow-up"></i> 
+    </a>
+
+     <!-- FOOTER -->
+    <footer>
+        <p>2026 &copy; SAKURA. Todos los derechos reservados.</p>
+        <!-- enlaces-footer -->
+        <div  class="enlaces-footer">
+            <a href="privacidad.html">Política de Privacidad</a> |
+            <a href="cookies.html">Política de Cookies</a> |
+            <a href="terminos.html">Términos y Condiciones</a>
+        </div>
+        <!-- redes sociales -->
+            <div class="redes">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+
+    </footer>
+</body>
+
+<script>
+    window.onscroll = function() {
+    var flecha = document.getElementById("flecha-arriba");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        flecha.classList.add("mostrar");
+    } else {
+        flecha.classList.remove("mostrar");
+    }
+};
+
+document.getElementById("flecha-arriba").onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+};
+
+</script>
+</html>

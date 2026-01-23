@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
 </head>
 <body>
     <header>
@@ -18,11 +21,28 @@
         <nav class="menu">
                 <a href="index.html">INICIO</a>
                 <a href="nosotros.html">NOSOTROS</a>
-                <a href="servicios.html">COCINA</a>
+                <a href="cocina.html">COCINA</a>
                 <a href="webs.html">MENÚ</a>
                 <a href="contacto.html">CONTACTO</a>
         </nav>
+
+        <!-- EN ESTE MENU SE HA COGIDO DE UN SITIO WEB -->
+        <div class="respmenu">
+            <input type="checkbox">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+            <nav>
+                <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">NOSOTROS</a></li>
+                <li><a href="#">COCINA</a></li>
+                <li><a href="#">MENÚ</a></li>
+                <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
 
 
     <main>
@@ -30,17 +50,111 @@
             <h1>Bienvenido a Sakura</h1>
             <p>Somos expertos en la cocina japonesa tradicional.</p>
             <a href="contacto.html">
-            <button class="btn-primary" >Descubre más</button>
+            <button class="btn-primary">Descubre más</button>
             </a>    
         </div>
 
+        <!-- SECCION 2 - SOBRE EL RESTAURANTE
+        --------------------------------------- -->
         <div class="seccion2">
             <div class="texto-seccion2">
+                <h1>Sobre <span>SAKURA</span></h1>
                 <p>
-                    Sakura es un restaurante japonés ubicado en el corazón de la ciudad, dedicado a ofrecer una experiencia culinaria auténtica y memorable. Nuestro equipo de chefs expertos utiliza ingredientes frescos y técnicas tradicionales para preparar platos que deleitan los sentidos. Ya sea que busques sushi fresco, ramen reconfortante o platos especiales de temporada, en Sakura encontrarás una variedad de opciones que satisfacen todos los gustos. Ven y disfruta de un ambiente acogedor y un servicio excepcional mientras exploras los sabores únicos de Japón.
+                    Restaurante Japonés Sakura es un espacio dedicado a ofrecer una experiencia gastronómica auténtica inspirada en la tradición japonesa. Ubicado en el corazón de la ciudad, Sakura combina un ambiente elegante y acogedor con un servicio cercano y profesional, creando el lugar perfecto para disfrutar de una comida especial.
+                </p>
+                <p>
+                    Nuestro equipo de chefs expertos trabaja con ingredientes frescos y de alta calidad, aplicando técnicas tradicionales para garantizar platos llenos de sabor, equilibrio y presentación impecable. En Sakura, cada detalle está pensado para que nuestros clientes vivan un viaje culinario único, desde el primer bocado hasta el último.
+                </p>
+                <p>
+                    Ya sea para una cena romántica, una comida con amigos o una ocasión especial, Sakura es el lugar ideal para descubrir la esencia de Japón a través de su cocina.
                 </p>
             </div>
+             <img src="imgs/restaurante.jpg" alt="Imagen del restaurante">
+        </div>
+
+        <div class="seccion3">
+            <img src="imgs/mesaSushi.jpeg" alt="Imagen del restaurante">
+            <div class="texto-seccion3">
+                <h1>Nuestra <span>comida</span></h1>
+                <p>
+                    En Sakura nos especializamos en cocina japonesa tradicional, una gastronomía reconocida por su equilibrio, frescura y respeto por los ingredientes. Nuestra propuesta incluye una amplia variedad de platos emblemáticos como sushi artesanal, sashimi fresco, ramen reconfortante, tempura crujiente y especialidades de temporada elaboradas con técnicas auténticas.
+                </p>
+                <p>
+                    Cada receta busca resaltar los sabores naturales, combinando texturas, aromas y presentaciones cuidadas al detalle. La cocina japonesa se caracteriza por su armonía entre lo visual y lo gastronómico, y en Sakura trabajamos para mantener viva esa filosofía en cada plato.
+                </p>
+                <p>
+                    Nuestra carta ofrece opciones para todos los gustos, desde los amantes de la cocina clásica hasta quienes desean explorar nuevos sabores de Japón en una experiencia culinaria única.
+                </p>
+                <p>Haz click aqui para ver nuestro menú completo.</p><br>
+                
+                 <a href="menu.html">
+                    <button class="btn-primary" type="submit">Ver Menú</button>
+                </a>
+            </div>
+            
+        </div>
+        
+        <div class="seccion4">
+            <h1><span>FAMOSOS</span> que nos han visitado</h1>
+            <div class="clientes-famosos">
+                <div class="cliente1">
+                    <img src="imgs/Ken_watanabe.webp" alt="Cliente Famoso 1">
+                    <h3>Ken Watanabe</h3>
+                    <p>Actor japonés de renombre internacional, conocido por su participación en grandes producciones de Hollywood y su apoyo a la cultura japonesa.</p>
+                </div>
+                <div class="cliente2">
+                    <img src="imgs/naomiOsaka.avif" alt="Cliente Famoso 2">
+                    <h3>Naomi Osaka</h3>
+                    <p>Tenista profesional japonesa, campeona de Grand Slam y referente global del deporte y la cultura contemporánea.</p>
+                </div>
+                <div class="cliente3">
+                    <img src="imgs/Gordon_Ramsay.jpeg" alt="Cliente Famoso 3">
+                    <h3>Gordon Ramsay</h3>
+                    <p>Chef internacionalmente famoso por su exigencia culinaria y su admiración por la precisión y técnica de la cocina japonesa.</p>
+                </div>
         </div>
     </main>
+
+    <!-- Ícono de flecha hacia arriba -->
+    <a href="#" id="flecha-arriba" class="flecha-arriba">
+        <i class="fas fa-arrow-up"></i> 
+    </a>
+
+     <!-- FOOTER -->
+    <footer>
+        <p>2026 &copy; SAKURA. Todos los derechos reservados.</p>
+        <!-- enlaces-footer -->
+        <div  class="enlaces-footer">
+            <a href="privacidad.html">Política de Privacidad</a> |
+            <a href="cookies.html">Política de Cookies</a> |
+            <a href="terminos.html">Términos y Condiciones</a>
+        </div>
+        <!-- redes sociales -->
+            <div class="redes">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+
+    </footer>
 </body>
+
+<script>
+    window.onscroll = function() {
+    var flecha = document.getElementById("flecha-arriba");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        flecha.classList.add("mostrar");
+    } else {
+        flecha.classList.remove("mostrar");
+    }
+};
+
+document.getElementById("flecha-arriba").onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+};
+
+</script>
 </html>
