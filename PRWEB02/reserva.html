@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Japonés</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+    <header>
+        <img src="imgs/sakura.svg" alt="Logo Restaurante Japonés Sakura" id="logo">
+        <h1>Restaurante Japonés Sakura</h1>
+
+         <!-- MENÚ DE NAVEGACION DE LA PÁGINA -->
+        <nav class="menu">
+                <a href="index.html">INICIO</a>
+                <a href="nosotros.html">NOSOTROS</a>
+                <a href="cocina.html">COCINA</a>
+                <a href="menu.html">MENÚ</a>
+                <a href="contacto.html">CONTACTO</a>
+                <a href="reserva.html">RESERVA / PIDE</a>
+        </nav>
+
+        <!-- EN ESTE MENU SE HA COGIDO DE UN SITIO WEB -->
+        <div class="respmenu">
+            <input type="checkbox">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+            <nav>
+                <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="cocina.html">COCINA</a></li>
+                <li><a href="menu.html">MENÚ</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="reserva.html">RESERVA / PIDE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class="intro">
+            <h1>Reserva tu mesa & encarga tu pedido</h1>
+            <p>Reserva o ten nuestra comida en casa con un solo click.</p>
+            <a href="contacto.html">
+            <button class="btn-primary">Contáctanos</button>
+            </a>    
+        </div>
+
+        <!-- RESERVA DE MESA -->
+        <div class="reserva" id="reserva">
+            <h1>Reserva tu <span>Mesa</span></h1>
+            <p>Asegura tu mesa en Sakura y disfruta de la auténtica cocina japonesa.</p>
+
+            <div class="formulario_reserva">
+                <form>
+
+                    <label>Nombre completo</label>
+                    <input type="text" placeholder="Introduce tu nombre" required>
+
+                    <label>Correo electrónico</label>
+                    <input type="email" placeholder="Introduce tu email" required>
+
+                    <label>Teléfono</label>
+                    <input type="tel" placeholder="Número de contacto" required>
+
+                    <label>Número de personas</label>
+                    <input type="number" min="1" max="20" placeholder="Ejemplo: 2" required>
+
+                    <label>Fecha de la reserva</label>
+                    <input type="date" required>
+
+                    <label>Hora de la reserva</label>
+                    <input type="time" required>
+
+                    <label>Zona preferida</label>
+                    <select>
+                        <option value="">Selecciona una opción</option>
+                        <option>Sala interior</option>
+                        <option>Terraza</option>
+                        <option>Zona privada</option>
+                    </select>
+
+                    <label>Peticiones especiales</label>
+                    <textarea placeholder="Cumpleaños, alergias, trona para niños, etc."></textarea>
+
+                    <button type="submit" class="btn-primary">Confirmar Reserva</button>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="titulo-separador" style="color: #F2C9D5;background-color: #333333;">
+            <h1>¡ DISFRUTA DE NUESTRA DELICIOSA COMIDA DESDE CASA !</h1>
+        </div>
+
+
+       <!-- FORMULARIO PEDIDO -->
+        <div class="pedido" id="pedidos">
+            <h1>Encarga tu <span>Pedido</span></h1>
+            <p>Haz tu pedido online y prepáralo para recoger o entrega.</p>
+
+            <div class="formulario_pedido">
+                <form>
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="tel" placeholder="Teléfono" required>
+
+                    <label>Dirección de entrega</label>
+                    <input type="text" placeholder="Dirección completa" required>
+
+                    <label>Selecciona tus platos</label>
+                    <textarea placeholder="Ejemplo: Katsudon x1, Ramen x1, Mochi x2"></textarea>
+
+                    <label>Hora deseada</label>
+                    <input type="time" required>
+
+                    <textarea placeholder="Notas adicionales (sin picante, sin cebolla...)"></textarea>
+
+                    <button type="submit" class="btn-primary">Enviar Pedido</button>
+                </form>
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+    <!-- Ícono de flecha hacia arriba -->
+    <a href="#" id="flecha-arriba" class="flecha-arriba">
+        <i class="fas fa-arrow-up text-2xl"></i> 
+    </a>
+
+
+    <!-- SECCIÓN NEWSLETTER -->
+    <section class="newsletter">
+        <h1>Suscríbete a <span>Nuestras Novedades</span></h1>
+        <p>Recibe promociones, nuevos platos y eventos especiales directamente en tu email.</p>
+
+        <form class="newsletter-form">
+            <input type="email" placeholder="Introduce tu correo electrónico" required>
+            <button type="submit" class="btn-primary">Suscribirme</button>
+        </form>
+    </section>
+
+    
+     <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-8 px-4 text-center">
+        <p class="text-sm mb-4">2026 &copy; SAKURA. Todos los derechos reservados.</p>
+        <!-- enlaces-footer -->
+        <div class="flex justify-center gap-2 text-sm mb-4 flex-wrap">
+            <a href="privacidad.html" class="text-white no-underline hover:text-pink-300 transition" style="color: white !important;">Política de Privacidad</a>
+            <span>|</span>
+            <a href="cookies.html" class="text-white no-underline hover:text-pink-300 transition" style="color: white !important;">Política de Cookies</a>
+            <span>|</span>
+            <a href="terminos.html" class="text-white no-underline hover:text-pink-300 transition" style="color: white !important;">Términos y Condiciones</a>
+        </div>
+        <!-- redes sociales -->
+        <div class="flex justify-center gap-6">
+            <a href="https://www.facebook.com" target="_blank" style="color: white !important; text-decoration: none;">
+                <i class="fa-brands fa-facebook-f text-5xl"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" style="color: white !important; text-decoration: none;">
+                <i class="fa-brands fa-twitter text-5xl"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" style="color: white !important; text-decoration: none;">
+                <i class="fa-brands fa-youtube text-5xl"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+<script>
+    window.onscroll = function() {
+    var flecha = document.getElementById("flecha-arriba");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        flecha.classList.add("mostrar");
+    } else {
+        flecha.classList.remove("mostrar");
+    }
+};
+
+document.getElementById("flecha-arriba").onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+};
+
+</script>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Japonés</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+    <header>
+        <img src="imgs/sakura.svg" alt="Logo Restaurante Japonés Sakura" id="logo">
+        <h1>Restaurante Japonés Sakura</h1>
+
+         <!-- MENÚ DE NAVEGACION DE LA PÁGINA -->
+        <nav class="menu">
+                <a href="index.html">INICIO</a>
+                <a href="nosotros.html">NOSOTROS</a>
+                <a href="cocina.html">COCINA</a>
+                <a href="menu.html">MENÚ</a>
+                <a href="contacto.html">CONTACTO</a>
+                <a href="reserva.html">RESERVA / PIDE</a>
+        </nav>
+
+        <!-- EN ESTE MENU SE HA COGIDO DE UN SITIO WEB -->
+        <div class="respmenu">
+            <input type="checkbox">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+            <nav>
+                <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="cocina.html">COCINA</a></li>
+                <li><a href="menu.html">MENÚ</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="reserva.html">RESERVA / PIDE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main>
+
+    <!-- INTRO -->
+    <div class="intro">
+        <h1>Sobre <span>Nosotros</span></h1>
+        <p>Pasión por Japón, respeto por la tradición</p>
+        <a href="reserva.html#reserva">
+            <button class="btn-primary">Reserva tu mesa</button>
+        </a>
+    </div>
+
+    <!-- SOBRE SAKURA -->
+    <div class="seccion2">
+        <div class="texto-seccion2">
+            <h1>Sobre <span>SAKURA</span></h1>
+                <p>
+                    Restaurante Japonés Sakura es un espacio dedicado a ofrecer una experiencia gastronómica auténtica inspirada en la tradición japonesa. Ubicado en el corazón de la ciudad, Sakura combina un ambiente elegante y acogedor con un servicio cercano y profesional, creando el lugar perfecto para disfrutar de una comida especial.
+                </p>
+                <p>
+                    Nuestro equipo de chefs expertos trabaja con ingredientes frescos y de alta calidad, aplicando técnicas tradicionales para garantizar platos llenos de sabor, equilibrio y presentación impecable. En Sakura, cada detalle está pensado para que nuestros clientes vivan un viaje culinario único, desde el primer bocado hasta el último.
+                </p>
+                <p>
+                    Ya sea para una cena romántica, una comida con amigos o una ocasión especial, Sakura es el lugar ideal para descubrir la esencia de Japón a través de su cocina.
+                </p>
+        </div>
+        <img src="imgs/restaurante.jpg" alt="Interior del restaurante Sakura">
+    </div>
+
+    <!-- NUESTRA FILOSOFÍA -->
+    <div class="seccion3">
+        <img src="imgs/bonsai.jpg" alt="Cultura japonesa">
+        <div class="texto-seccion3">
+            <h1>Nuestra <span>Filosofía</span></h1>
+            <p>
+                Creemos en la simplicidad, el equilibrio y el respeto por cada ingrediente. 
+                Nuestra cocina se basa en la armonía de sabores, la frescura de los productos y la atención al detalle en cada preparación.
+            </p>
+            <p>
+                Inspirados por la filosofía japonesa del cuidado y la dedicación, trabajamos cada día para ofrecer platos auténticos y memorables.
+            </p>
+        </div>
+    </div>
+
+    <!-- NUESTRO CHEF -->
+    <div class="seccion2">
+        <div class="texto-seccion2">
+            <h1>Nuestro <span>Chef</span></h1>
+            <p>
+                Nuestro chef combina formación en cocina japonesa tradicional con una visión moderna e innovadora. 
+                Su pasión por la gastronomía japonesa se refleja en cada plato, desde el sushi hasta los bowls más elaborados.
+            </p>
+            <p>
+                Cada receta es cuidada al detalle para garantizar autenticidad, calidad y una experiencia culinaria única.
+            </p>
+        </div>
+        <img src="imgs/chef.jpg" alt="Chef de Sakura">
+    </div>
+
+    <!-- EXPERIENCIA SAKURA -->
+    <div class="seccion3">
+        <img src="imgs/clientes.jpg" alt="Experiencia Sakura">
+        <div class="texto-seccion3">
+            <h1>La Experiencia <span>Sakura</span></h1>
+            <p>
+                Más que un restaurante, Sakura es un lugar para disfrutar, relajarse y descubrir nuevos sabores. 
+                Nuestro ambiente combina diseño japonés, calidez y una atención cercana para que cada visita sea especial.
+            </p>
+            <p>
+                Queremos que cada cliente se sienta como en casa mientras viaja a Japón a través de nuestros platos.
+            </p>
+        </div>
+    </div>
+
+</main>
+
+
+    <!-- Ícono de flecha hacia arriba -->
+    <a href="#" id="flecha-arriba" class="flecha-arriba">
+        <i class="fas fa-arrow-up text-2xl"></i> 
+    </a>
+
+
+    <!-- SECCIÓN NEWSLETTER -->
+    <section class="newsletter">
+        <h1>Suscríbete a <span>Nuestras Novedades</span></h1>
+        <p>Recibe promociones, nuevos platos y eventos especiales directamente en tu email.</p>
+
+        <form class="newsletter-form">
+            <input type="email" placeholder="Introduce tu correo electrónico" required>
+            <button type="submit" class="btn-primary">Suscribirme</button>
+        </form>
+    </section>
+
+
+     <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-8 px-4 text-center">
+        <p class="text-sm mb-4">2026 &copy; SAKURA. Todos los derechos reservados.</p>
+        <!-- enlaces-footer -->
+        <div class="flex justify-center gap-2 text-sm mb-4 flex-wrap">
+            <a href="privacidad.html" class="text-white no-underline hover:text-pink-300 transition" style="color: white !important;">Política de Privacidad</a>
+            <span>|</span>
+            <a href="cookies.html" class="text-white no-underline hover:text-pink-300 transition" style="color: white !important;">Política de Cookies</a>
+            <span>|</span>
+            <a href="terminos.html" class="text-white no-underline hover:text-pink-300 transition" style="color: white !important;">Términos y Condiciones</a>
+        </div>
+        <!-- redes sociales -->
+        <div class="flex justify-center gap-6">
+            <a href="https://www.facebook.com" target="_blank" style="color: white !important; text-decoration: none;">
+                <i class="fa-brands fa-facebook-f text-5xl"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" style="color: white !important; text-decoration: none;">
+                <i class="fa-brands fa-twitter text-5xl"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" style="color: white !important; text-decoration: none;">
+                <i class="fa-brands fa-youtube text-5xl"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+<script>
+    window.onscroll = function() {
+    var flecha = document.getElementById("flecha-arriba");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        flecha.classList.add("mostrar");
+    } else {
+        flecha.classList.remove("mostrar");
+    }
+};
+
+document.getElementById("flecha-arriba").onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+};
+
+</script>
+</html>

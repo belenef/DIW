@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+      <header>
+        <img src="imgs/sakura.svg" alt="Logo Restaurante Japonés Sakura" id="logo">
+        <h1>Restaurante Japonés Sakura</h1>
+
+         <!-- MENÚ DE NAVEGACION DE LA PÁGINA -->
+        <nav class="menu">
+                <a href="index.html">INICIO</a>
+                <a href="nosotros.html">NOSOTROS</a>
+                <a href="cocina.html">COCINA</a>
+                <a href="menu.html">MENÚ</a>
+                <a href="contacto.html">CONTACTO</a>
+                <a href="reserva.html">RESERVA / PIDE</a>
+        </nav>
+
+        <!-- EN ESTE MENU SE HA COGIDO DE UN SITIO WEB -->
+        <div class="respmenu">
+            <input type="checkbox">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+            <nav>
+                <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="cocina.html">COCINA</a></li>
+                <li><a href="menu.html">MENÚ</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="reserva.html">RESERVA / PIDE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="intro">
+            <h1>Descubre nuestro menú</h1>
+            <p>Sabores auténticos de Japón</p>
+            <a href="reserva.html#reserva">
+            <button class="btn-primary">Reserva tu mesa</button>
+            </a>    
+        </div>
+
+        <!-- SECCION 2 DE MENU-->
+        <div class="menu-seccion">
+            <!-- MENÚ DEL DÍA -->
+                <div class="menu-dia-seccion">
+                    <div class="menu-dia-intro">
+                        <h1>Menú del Día</h1>
+                        <p>Disfruta de nuestro menú del día: una selección equilibrada de entrante, sopa, plato principal y postre para una experiencia completa.</p>
+                    </div>
+
+                    <div class="menu-dia-card">
+                        <div class="menu-dia-texto">
+                            <h3>Entrante: Edamame</h3>
+                            <p>Vainas de soja cocidas y ligeramente saladas, perfectas para abrir el apetito con sabor auténtico japonés.</p>
+                            <span class="precio">4,50€</span>
+                        </div>
+                        <div class="menu-dia-img">
+                            <img src="imgs/edamame.jpeg" alt="Edamame">
+                        </div>
+                    </div>
+
+                    <div class="menu-dia-card">
+                        <div class="menu-dia-texto">
+                            <h3>Sopa: Sopa Miso</h3>
+                            <p>Tradicional sopa de miso con tofu suave y algas wakame, ideal para entrar en calor y acompañar tu comida.</p>
+                            <span class="precio">4,50€</span>
+                        </div>
+                        <div class="menu-dia-img">
+                            <img src="imgs/sopa_miso.jpg" alt="Sopa Miso">
+                        </div>
+                    </div>
+
+                    <div class="menu-dia-card">
+                        <div class="menu-dia-texto">
+                            <h3>Plato Principal: Katsudon Especial</h3>
+                            <p>Chuleta de cerdo empanizada y crujiente, cocinada con huevo batido y salsa dashi, servida sobre arroz japonés al dente.</p>
+                            <span class="precio">13,50€</span>
+                        </div>
+                        <div class="menu-dia-img">
+                            <img src="imgs/katsudon.jpeg" alt="Katsudon Especial">
+                        </div>
+                    </div>
+
+                    <div class="menu-dia-card">
+                        <div class="menu-dia-texto">
+                            <h3>Bowl: Curry Japonés con Arroz</h3>
+                            <p>Curry suave y aromático con verduras tiernas y arroz blanco esponjoso, una combinación reconfortante y llena de sabor.</p>
+                            <span class="precio">11,90€</span>
+                        </div>
+                        <div class="menu-dia-img">
+                            <img src="imgs/curry_japones.jpg" alt="Curry Japonés con Arroz">
+                        </div>
+                    </div>
+
+                    <div class="menu-dia-card">
+                        <div class="menu-dia-texto">
+                            <h3>Postre: Cheesecake Japonés</h3>
+                            <p>Suave y esponjoso cheesecake al estilo japonés, ligero y delicado, perfecto para cerrar la comida con un toque dulce.</p>
+                            <span class="precio">4,90€</span>
+                        </div>
+                        <div class="menu-dia-img">
+                            <img src="imgs/cheesecake_japones.jpg" alt="Cheesecake Japonés">
+                        </div>
+                    </div>
+                </div>
+
+
+
+            <div class="texto-menu">
+                <h1>Nuestra <span>Carta</span></h1>
+                <h2>Descubre nuestros platos japoneses</h2>
+
+                <p>
+                    Explora nuestra carta con una selección de platos japoneses elaborados con ingredientes frescos y técnicas tradicionales, pensados para ofrecer una experiencia auténtica y deliciosa.
+                </p>
+
+                <!-- ENTRANTES -->
+                        <h1>Entrantes</h1>
+
+                    <div class="cards-platos">
+
+                        <div class="card">
+                            <img src="imgs/edamame.jpeg" alt="Edamame">
+                            <h3>Edamame</h3>
+                            <p>Vainas de soja cocidas y ligeramente saladas.</p>
+                            <span class="precio">4,90€</span>
+                        </div>
+
+                        <div class="card">
+                            <img src="imgs/gyozas.jpeg" alt="Gyozas">
+                            <h3>Gyozas</h3>
+                            <p>Empanadillas japonesas rellenas de carne y verduras.</p>
+                            <span class="precio">6,90€</span>
+                        </div>
+
+                        <div class="card">
+                            <img src="imgs/karaage.jpg" alt="Karaage">
+                            <h3>Karaage</h3>
+                            <p>Pollo frito japonés crujiente y jugoso.</p>
+                            <span class="precio">7,50€</span>
+                        </div>
+
+                        <div class="card">
+                            <img src="imgs/takoyaki.jpeg" alt="Takoyaki">
+                            <h3>Takoyaki</h3>
+                            <p>Bolitas de pulpo crujientes y suaves, servidas con salsa especial.</p>
+                            <span class="precio">6,90€</span>
+                        </div>
+
+                    </div>
+
+                    <!-- SUSHI -->
+                    <div class="titulo-separador">
+                        <h1>Sushi & Sashimi</h1>
+                    </div>
+                    <div class="cards-platos">
+
+                        <div class="card">
+                            <img src="imgs/sushi_variado.jpg" alt="Sushi Variado">
+                            <h3>Sushi Variado</h3>
+                            <p>Selección de nigiris y makis con pescado fresco.</p>
+                            <span class="precio">12,90€</span>
+                        </div>
+
+                        <div class="card">
+                            <img src="imgs/nigiri_salmon.jpg" alt="Nigiri de Salmón">
+                            <h3>Nigiri de Salmón</h3>
+                            <p>Arroz japonés coronado con salmón fresco.</p>
+                            <span class="precio">8,90€</span>
+                        </div>
+
+                        <div class="card">
+                            <img src="imgs/sashimi.jpg" alt="Sashimi Premium">
+                            <h3>Sashimi Premium</h3>
+                            <p>Cortes finos de pescado fresco de alta calidad.</p>
+                            <span class="precio">13,90€</span>
+                        </div>
+
+                        <div class="card">
+                            <img src="imgs/temaki_salmon.jpeg" alt="Temaki de Salmón">
+                            <h3>Temaki de Salmón</h3>
+                            <p>Cono de alga nori relleno de arroz japonés, salmón fresco y vegetales crujientes.</p>
+                            <span class="precio">7,90€</span>
+                        </div>
+
+                    </div>
+
+                    <!-- PLATOS PRINCIPALES -->
+                    <div class="titulo-separador">
+                        <h1>Platos Principales</h1>
+                    </div>
+                    <div class="cards-platos">
+
+                        <div class="card">
+                            <img src="imgs/katsudon.jpeg" alt="Katsudon Especial">
+                            <h3>Katsudon Especial</h3>
+                            <p>Chuleta empanizada crujiente con huevo, salsa dashi y arroz.</p>
+                            <span class="precio">13,90€</span>
+                        </div>
+
+                        <div class="card">
+                            <img src="imgs/tonkatsu.jpg" alt="Tonkatsu">
+                            <h3>Tonkatsu</h3>
+                            <p>Chuleta de cerdo empanizada con salsa japonesa.</p>
+                            <span class="precio">12,50€</span>
+                        </div>
+
+                        <div class="card">
+                            <img src="imgs/teriyaki_pollo.jpg" alt="Pollo Teriyaki">
+                            <h3>Pollo Teriyaki</h3>
+                            <p>Pollo glaseado en salsa teriyaki dulce y salada.</p>
+                            <span class="precio">11,90€</span>
+                        </div>
+
+                        <div class="card">
+                           <img src="imgs/hamburguesa.jpg" alt="Hamburguesa Japonesa">
+                            <h3>Hamburguesa Japonesa</h3>
+                            <p>Hamburguesa de ternera con salsa teriyaki y vegetales.</p>
+                            <span class="precio">12,90€</span>
+                        </div>
+
+                    </div>
+
+                    <!-- BOWLS & ARROCES -->
+                    <div class="titulo-separador">
+                        <h1>Bowls & Arroces</h1>
+                    </div>
+                    <div class="cards-platos">
+
+                        <div class="card">
+                            <img src="imgs/gyudon.jpg" alt="Gyudon">
+                            <h3>Gyudon</h3>
+                            <p>Bol de arroz con ternera cocinada en salsa japonesa.</p>
+                            <span class="precio">11,50€</span>
+                        </div>
+
+                        <div class="card">
+                            <img src="imgs/oyakodon.jpeg" alt="Oyakodon">
+                            <h3>Oyakodon</h3>
+                            <p>Arroz con pollo, huevo y cebolla en salsa suave.</p>
+                            <span class="precio">11,50€</span>
+                        </div>
+
+                        <div class="card">
+                            <img src="imgs/unadon.jpg" alt="Unadon">
+                            <h3>Unadon</h3>
+                            <p>Anguila glaseada servida sobre arroz japonés.</p>
+                            <span class="precio">14,90€</span>
+                        </div>
+
+                        <div class="card">
+                            <img src="imgs/curry_japones.jpg" alt="Curry Japonés con Arroz">
+                            <h3>Curry Japonés con Arroz</h3>
+                            <p>Curry suave con verduras y arroz blanco.</p>
+                            <span class="precio">11,90€</span>
+                        </div>
+
+                    </div>
+
+                    <!-- FIDEOS & SOPAS -->
+                    <div class="titulo-separador">
+                        <h1>Fideos & Sopas</h1>
+                    </div>
+                    <div class="cards-platos">
+
+                        <div class="card">
+                            <img src="imgs/ramen.jpeg" alt="Ramen Tradicional">
+                            <h3>Ramen Tradicional</h3>
+                            <p>Caldo intenso con fideos japoneses, cerdo y huevo.</p>
+                            <span class="precio">11,50€</span>
+                        </div>
+
+                        <div class="card">
+                            <img src="imgs/udon.jpg" alt="Udon">
+                            <h3>Udon</h3>
+                            <p>Fideos gruesos en caldo ligero con verduras.</p>
+                            <span class="precio">10,90€</span>
+                        </div>
+
+                        <div class="card">
+                            <img src="imgs/yakisoba.jpg" alt="Yakisoba">
+                            <h3>Yakisoba</h3>
+                            <p>Fideos salteados con verduras y carne.</p>
+                            <span class="precio">10,50€</span>
+                        </div>
+
+                        <div class="card">
+                            <img src="imgs/sopa_miso.jpg" alt="Sopa Miso">
+                            <h3>Sopa Miso</h3>
+                            <p>Tradicional sopa de miso con tofu y algas wakame.</p>
+                            <span class="precio">4,50€</span>
+                        </div>
+
+                    </div>
+
+                    <!-- POSTRES -->
+                    <div class="titulo-separador">
+                        <h1>Postres</h1>
+                    </div>
+                    <div class="cards-platos">
+
+                        <div class="card">
+                            <img src="imgs/mochi.jpg" alt="Mochi">
+                            <h3>Mochi</h3>
+                            <p>Dulce japonés relleno de crema o anko.</p>
+                            <span class="precio">4,50€</span>
+                        </div>
+
+                        <div class="card">
+                            <img src="imgs/dorayaki.jpg" alt="Dorayaki">
+                            <h3>Dorayaki</h3>
+                            <p>Pastel japonés relleno de chocolate o judía roja dulce.</p>
+                            <span class="precio">4,90€</span>
+                        </div>
+
+                        <div class="card">
+                            <img src="imgs/helado_matcha.jpg" alt="Helado Matcha">
+                            <h3>Helado de Matcha</h3>
+                            <p>Helado cremoso con té verde japonés.</p>
+                            <span class="precio">4,50€</span>
+                        </div>
+
+                        <div class="card">
+                            <img src="imgs/cheesecake_japones.jpg" alt="Cheesecake Japonés">
+                            <h3>Cheesecake Japonés</h3>
+                            <p>Suave y esponjoso cheesecake al estilo japonés, ligero y delicado.</p>
+                            <span class="precio">4,90€</span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </main>
+
+    <!-- Ícono de flecha hacia arriba -->
+    <a href="#" id="flecha-arriba" class="flecha-arriba">
+        <i class="fas fa-arrow-up text-2xl"></i> 
+    </a>
+
+
+    <!-- SECCIÓN NEWSLETTER -->
+    <section class="newsletter">
+        <h1>Suscríbete a <span>Nuestras Novedades</span></h1>
+        <p>Recibe promociones, nuevos platos y eventos especiales directamente en tu email.</p>
+
+        <form class="newsletter-form">
+            <input type="email" placeholder="Introduce tu correo electrónico" required>
+            <button type="submit" class="btn-primary">Suscribirme</button>
+        </form>
+    </section>
+
+     <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-8 px-4 text-center">
+        <p class="text-sm mb-4">2026 &copy; SAKURA. Todos los derechos reservados.</p>
+        <!-- enlaces-footer -->
+        <div class="flex justify-center gap-2 text-sm mb-4 flex-wrap">
+            <a href="privacidad.html" class="text-white no-underline hover:text-pink-300 transition" style="color: white !important;">Política de Privacidad</a>
+            <span>|</span>
+            <a href="cookies.html" class="text-white no-underline hover:text-pink-300 transition" style="color: white !important;">Política de Cookies</a>
+            <span>|</span>
+            <a href="terminos.html" class="text-white no-underline hover:text-pink-300 transition" style="color: white !important;">Términos y Condiciones</a>
+        </div>
+        <!-- redes sociales -->
+        <div class="flex justify-center gap-6">
+            <a href="https://www.facebook.com" target="_blank" style="color: white !important; text-decoration: none;">
+                <i class="fa-brands fa-facebook-f text-5xl"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" style="color: white !important; text-decoration: none;">
+                <i class="fa-brands fa-twitter text-5xl"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" style="color: white !important; text-decoration: none;">
+                <i class="fa-brands fa-youtube text-5xl"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            var flecha = document.getElementById("flecha-arriba");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                flecha.classList.add("mostrar");
+            } else {
+                flecha.classList.remove("mostrar");
+            }
+        };
+
+        document.getElementById("flecha-arriba").onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        };
+    </script>
+</body>
+</html>

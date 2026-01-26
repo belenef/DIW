@@ -11,6 +11,9 @@ html,body{
     padding: 0;
     height: 100%;
 }
+button{
+    cursor: pointer;
+}
 
 body{
     background-color: #f8f9fa;
@@ -127,7 +130,7 @@ header h1{
 .seccion2 img:hover{
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
-    filter: brightness(70%); /* Oscurece la imagen al 70% de su brillo original */
+    filter: brightness(70%); 
 }
 .texto-seccion2 p{
     margin-right: 3rem;
@@ -188,7 +191,7 @@ header h1{
 .seccion3 img:hover{
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
-    filter: brightness(70%); /* Oscurece la imagen al 70% de su brillo original */
+    filter: brightness(70%);
 }
 .texto-seccion3 p{
     margin-left: 3rem;
@@ -248,6 +251,9 @@ header h1{
     padding-bottom: 3rem;
     padding-top: 3rem;
     margin-bottom: 3rem;
+}
+.formulario_contacto button{
+    cursor: pointer;
 }
 .formulario_contacto input, .formulario_contacto textarea{
     margin: 1rem 0;
@@ -316,6 +322,73 @@ iframe{
     margin-right: 2rem;
     margin-left: 2rem;
 }
+
+/* NEWSLETTER */
+.newsletter {
+    background-color: #CECECE;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.newsletter h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color:#333333;
+}
+
+.newsletter h1 span {
+    color: #F2C9D5;
+    background-color: #333333;
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+}
+
+.newsletter p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #333333;
+    font-size: 1.05rem;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input {
+    padding: 14px 18px;
+    width: 320px;
+    max-width: 100%;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+.newsletter-form input::placeholder {
+    color: #777;
+}
+
+.newsletter-form button {
+    padding: 14px 26px;
+    border-radius: 6px;
+    background-color: #333333;
+    color: #F2C9D5;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.25s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #F2C9D5;
+    color: #333333;
+    transform: translateY(-2px);
+}
+
 /* FOOTER */
 footer{
     background-color: #333333;
@@ -433,7 +506,7 @@ FIN DE LOS ESTILOS DEL MENU COGIDO DE UN SITIO WEB
 }
 
 .flecha-arriba.mostrar {
-    display: block; /* Muestra cuando JS le agregue la clase */
+    display: block; 
 }
 
 /* COCINA SECCION 2*/
@@ -462,7 +535,7 @@ FIN DE LOS ESTILOS DEL MENU COGIDO DE UN SITIO WEB
 .cocina2 img:hover{
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
-    filter: brightness(70%); /* Oscurece la imagen al 70% de su brillo original */
+    filter: brightness(70%); 
 }
 .texto-cocina2 p{
     margin-left: 0.5rem;
@@ -521,7 +594,7 @@ FIN DE LOS ESTILOS DEL MENU COGIDO DE UN SITIO WEB
 .cocina3 img:hover{
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
-    filter: brightness(70%); /* Oscurece la imagen al 70% de su brillo original */
+    filter: brightness(70%); 
 }
 .texto-cocina3 p{
     margin-left: 3rem;
@@ -583,7 +656,7 @@ FIN DE LOS ESTILOS DEL MENU COGIDO DE UN SITIO WEB
 .cocina4 img:hover{
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
-    filter: brightness(70%); /* Oscurece la imagen al 70% de su brillo original */
+    filter: brightness(70%); 
 }
 .texto-cocina4 p{
     margin-left: 0.5rem;
@@ -627,6 +700,71 @@ FIN DE LOS ESTILOS DEL MENU COGIDO DE UN SITIO WEB
     margin-top: -1rem;
 }
 
+/* COCINA SECCION 5 */
+.cocina5{
+    background-color: #333333;
+    padding: 7rem;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 10rem;
+}
+.texto-cocina5{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.cocina5 iframe{
+    width: 105rem;
+    height: 27rem;
+    border-radius: 3rem;
+    box-shadow: #333333 5px 5px 15px;
+    margin: 2rem;
+    margin-left: -20rem;
+    margin-right: -1rem;
+    transition: all 0.3s ease-in-out;
+}
+.cocina5 iframe:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    filter: brightness(70%);
+}
+.texto-cocina5 p{
+    margin-left: 0.5rem;
+    margin-top: 2rem;
+    text-align: justify;
+    font-size: 1.3rem;
+    margin-right: 30rem;
+    color: whitesmoke;
+}
+.texto-cocina5 span{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333333;
+    text-align: left;
+}
+
+.texto-cocina5 h1{
+    margin-top: -2rem;
+    text-align: left;
+    color: #F2C9D5;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+}
+.texto-cocina5 h2{
+    margin-left: 0.5rem;
+    text-align: left;
+    color: #F2C9D5;
+    font-size: 1.5rem;
+}
+.texto-cocina5 span{
+    font-size: 2rem;
+    color: #333333;
+    background-color: #F2C9D5;
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
 /* CARDS DE LOS PLATOS DE LA SECCION 4 */
 .cards-platos {
     display: flex;
@@ -634,11 +772,11 @@ FIN DE LOS ESTILOS DEL MENU COGIDO DE UN SITIO WEB
     margin-top: -6rem;
     background-color: white;
     padding: 7rem;
-    justify-content: center; /* centra las cards */
+    justify-content: center; 
 }
 
 .card {
-    flex: 1 1 calc(44.44% - 20px); /* 3 cards por fila */
+    flex: 1 1 calc(44.44% - 20px); 
     background: #fff;
     border-radius: 2rem;
     overflow: hidden;
@@ -646,6 +784,7 @@ FIN DE LOS ESTILOS DEL MENU COGIDO DE UN SITIO WEB
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     margin: 2rem;
+    min-height: 350px;
 }
 
 .card img {
@@ -679,6 +818,281 @@ FIN DE LOS ESTILOS DEL MENU COGIDO DE UN SITIO WEB
 .platos-populares{
     margin-top: -4rem;
 }
+
+/* SECCION MENU */
+.menu-seccion {
+    padding: 5rem 2rem;
+    background-color: white;
+    color: #333333;
+}
+
+.texto-menu {
+    text-align: center;
+}
+
+.texto-menu h1 span {
+    color: #ff7a9c;
+}
+
+.precio {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #ff7a9c;
+}
+
+
+.precio-menu {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: #F2C9D5;
+    background-color: #333333;
+    border-radius: 2rem;
+}
+.titulo-separador {
+    width: 100%;
+    background-color: #ff7a9c;
+    padding: 0.7rem 0;
+    text-align: center;
+}
+
+.menu-dia-seccion {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 5rem 2rem;
+    border-radius: 10rem;
+    box-shadow: #333333 5px 5px 15px;
+}
+
+.menu-dia-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.menu-dia-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background-color: #F2C9D5;
+    color: #333333;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    border-radius: 2rem;
+}
+
+.menu-dia-intro p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.menu-dia-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.menu-dia-texto {
+    flex: 1;
+    min-width: 250px;
+}
+
+.menu-dia-texto h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-left: 10rem;
+}
+
+.menu-dia-texto p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    margin-left: 10rem;
+}
+
+.menu-dia-texto .precio {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-left: 10rem;
+}
+
+.menu-dia-img {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.menu-dia-img img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 1rem;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+.menu-dia-img img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    filter: brightness(70%);
+}
+
+/* PEDIDOS  */
+.pedido{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 3rem;
+    text-align: center;
+}
+
+.pedido h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+.formulario_pedido form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border: #333333 2px solid;
+    border-radius: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.formulario_pedido button{
+    cursor: pointer;
+}
+
+.formulario_pedido input,
+.formulario_pedido textarea{
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Macondo", cursive;
+    font-size: 1rem;
+}
+
+.formulario_pedido label{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+/* RESERVA MESA */
+.reserva{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 3rem;
+    text-align: center;
+}
+
+.reserva h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+.formulario_reserva form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border: #333333 2px solid;
+    border-radius: 2rem;
+    padding: 3rem 2rem;
+    margin-bottom: 3rem;
+}
+
+.formulario_reserva input,
+.formulario_reserva textarea,
+.formulario_reserva select{
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Macondo", cursive;
+    font-size: 1rem;
+}
+
+.formulario_reserva label{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.formulario_reserva button{
+    cursor: pointer;
+}
+
+/* RESEÑAS CLIENTES */
+.resenas-clientes {
+    background-color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.resenas-clientes h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+.resenas-clientes p {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 3rem;
+    color: #555;
+}
+
+.contenedor-resenas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.resena-card {
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin: 1.5rem;
+    width: 280px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resena-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+.estrellas i{
+    font-size: 1.3rem;
+    color: #F2C9D5;
+    margin-bottom: 1rem;
+}
+
+.resena-card p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.resena-card h3 {
+    font-size: 1rem;
+    color: #333333;
+}
+
+
+
 /* VERSION MOVIL */
 @media (max-width: 749px) {
     body {
@@ -776,6 +1190,16 @@ FIN DE LOS ESTILOS DEL MENU COGIDO DE UN SITIO WEB
     .btn-primary {
         font-size: 1rem;
         padding: 8px 16px;
+    }
+
+    .contacto {
+        padding: 1rem;
+    }
+
+    .formulario_contacto form {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        padding: 1rem;
     }
 
     .seccion2 {
@@ -978,6 +1402,574 @@ FIN DE LOS ESTILOS DEL MENU COGIDO DE UN SITIO WEB
         margin-top: -5.5rem;
     }
 
+    /* COCINA SECCION 5 */
+    .cocina5 {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+        
+    }
+
+    .texto-cocina5 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cocina5 iframe {
+        width: 35rem;
+        height: 15rem;
+        max-width: 20rem;
+        margin: 1rem 0;
+    }
+
+    .texto-cocina5 p {
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .texto-cocina5 span {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .texto-cocina5 h1{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .texto-cocina5 h2{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    /* SECCION 4 */
+    .seccion4{
+        background-color: white;
+        padding: 7rem;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .seccion4 h1{
+        /* text-align: center; */
+        color: #333333;
+        font-size: 1.2rem;
+        margin-bottom: -3rem;
+        margin-top: -2rem;
+        text-transform: uppercase;
+        
+    }
+    .clientes-famosos{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+        text-align: center;
+        flex-direction: column;
+    }
+    .clientes-famosos img{
+        width: 10.50rem;
+        height: 10.50rem;
+        border-radius: 50%;
+        box-shadow: #333333 5px 5px 15px;
+        transition: all 0.3s ease-in-out;
+        margin-top: 5rem;
+    }
+    .clientes-famosos img:hover{
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+    }
+    .seccion4 span{
+        font-size: 1.2rem;
+        color: #F2C9D5;
+        background-color: #333333;
+        border-radius: 2rem;
+        padding: 0.5rem;
+    }
+    .clientes-famosos p{
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+
+    .enlaces-footer a{
+        color: white;
+        text-decoration: none;
+        margin: 1rem 0rem 2rem;
+        margin-top: 3rem;
+        font-size: 0.7rem;
+    }
+
+    /* MENU DIA */
+    .menu-dia-img img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .menu-seccion {
+        padding: 2rem 1rem;
+    }
+
+    .menu-dia-seccion {
+        padding: 2rem 1rem;
+        border-radius: 5rem;
+    }
+
+
+    .menu-dia-intro h1 {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 2rem;
+    }
+
+    .menu-dia-intro p {
+        font-size: 1rem;
+    }
+
+    .menu-dia-texto h3 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .menu-dia-texto p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .menu-dia-texto .precio {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .menu-dia-card {
+        gap: 1rem;
+    }
+
+    .menu-dia-texto {
+        text-align: center;
+    }
+
+    .menu-dia-img {
+        text-align: center;
+    }
+
+    /* NUESTRA CARTA */
+    .texto-menu h1 {
+        /* font-size: 1.5rem; */
+        margin-bottom: 2rem;
+    }
+
+    /* NEWSLETTER */
+    .newsletter{
+        text-align: center;
+    }
+    .newsletter h1 {
+        font-size: 2rem;
+    }
+    .newsletter h1 span{
+        background-color: #CECECE;
+        color:#333333;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-form input {
+        width: 70%;
+    }
+
+    .newsletter-form button {
+        width: 70%;
+    }
+    
+    /* RESERVA */
+    .reserva {
+        padding: 1rem;
+    }
+
+    .formulario_reserva form {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        padding: 1rem;
+    }
+    
+    /* PEDIDO */
+    .pedido {
+        padding: 1rem;
+    }
+
+    .formulario_pedido form {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        padding: 1rem;
+    }
+}
+
+/* VERSION TABLET */
+@media screen and (min-width: 749px) and (max-width: 1249px) {
+    body {
+        height: auto;
+        background-image: url('../imgs/fondo2.jpg');
+    }
+
+    header {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        padding: 1rem 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+    }
+
+    #logo {
+        height: 2.5rem;
+        margin: 0.5rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .respmenu {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        margin-right: 2rem;
+        margin-top: 1.8rem;
+    }
+
+    .respmenu nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 32px;
+        right: 0;
+        background: #333333;
+        border-radius: 0 0 2rem 2rem;
+        padding: 0.5rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .respmenu input:checked ~ nav {
+        display: flex;
+    }
+
+    .respmenu nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .respmenu nav li {
+        margin: 0;
+    }
+
+    .respmenu nav a {
+        margin: 0.5rem;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: "Macondo", cursive;
+        padding: 8px;
+        border-radius: 1rem;
+    }
+
+    .respmenu nav a:hover {
+        color: #F2C9D5;
+    }
+
+    .intro {
+        height: auto;
+        padding: 2rem 1rem;
+        text-align: center;
+        padding-bottom: 13rem;
+        
+    }
+
+    .intro h1 {
+        margin-top: 50%;
+        font-size: 2rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .contacto {
+        padding: 1rem;
+    }
+
+    .formulario_contacto form {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        padding: 1rem;
+    }
+
+    .seccion2 {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .texto-seccion2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion2 img {
+        width: 35rem;
+        height: 15rem;
+        max-width: 20rem;
+        margin: 1rem 0;
+    }
+
+    .texto-seccion2 p {
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .texto-seccion2 span {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .texto-seccion2 h1{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    /* SECCION 3 */
+    .seccion3 {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .texto-seccion3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion3 img {
+        width: 35rem;
+        height: 15rem;
+        max-width: 20rem;
+        margin: 1rem 0;
+    }
+
+    .texto-seccion3 p {
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .texto-seccion3 span {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .texto-seccion3 h1{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    /* COCINA SECCION 2 */
+    .cocina2 {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .texto-cocina2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cocina2 img {
+        width: 35rem;
+        height: 15rem;
+        max-width: 20rem;
+        margin: 1rem 0;
+    }
+
+    .texto-cocina2 p {
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .texto-cocina2 span {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .texto-cocina2 h1{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    /* COCINA SECCION 3 */
+    .cocina3 {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+        
+    }
+
+    .texto-cocina3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cocina3 img {
+        width: 35rem;
+        height: 15rem;
+        max-width: 20rem;
+        margin: 1rem 0;
+    }
+
+    .texto-cocina3 p {
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .texto-cocina3 span {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .texto-cocina3 h1{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+    .texto-cocina3 h2{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    /* COCINA SECCION 4 */
+        .cocina4 {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .texto-cocina4 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .texto-cocina4 h2{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .cocina4 img {
+        width: 35rem;
+        height: 15rem;
+        max-width: 20rem;
+        margin: 1rem 0;
+        margin-bottom: 4rem;
+    }
+
+    .texto-cocina4 p {
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .texto-cocina4 span {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .texto-cocina4 h1{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    /* CARDS COCINA SECCION 4 */
+    .cards-platos {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -6rem;
+        background-color: white;
+        padding: 7rem;
+        justify-content: center;
+    }
+
+    .card {
+        flex: 1 1 calc(44.44% - 20px);
+        background: #fff;
+        border-radius: 2rem;
+        overflow: hidden;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin: 2rem;
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .platos-populares h1{
+        text-align: center;
+        color: #333333;
+    }
+    .platos-populares{
+        margin-top: -4rem;
+    }
+
+    /* COCINA SECCION 5 */
+    .cocina5 {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+        padding-bottom: 7rem;
+        
+    }
+
+    .texto-cocina5 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cocina5 iframe {
+        width: 35rem;
+        height: 15rem;
+        max-width: 20rem;
+        margin: 1rem 0;
+    }
+
+    .texto-cocina5 p {
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .texto-cocina5 span {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .texto-cocina5 h1{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .texto-cocina5 h2{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
     /* SECCION 4 */
 .seccion4{
     background-color: white;
@@ -1036,4 +2028,61 @@ FIN DE LOS ESTILOS DEL MENU COGIDO DE UN SITIO WEB
         margin-top: 3rem;
         font-size: 0.7rem;
     }
+
+    /* MENU DIA */
+     .menu-dia-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-dia-img img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .menu-seccion {
+        padding: 2rem 1rem;
+    }
+
+    .menu-dia-seccion {
+        padding: 2rem 1rem;
+    }
+
+    .menu-dia-intro h1 {
+        margin-left: 10rem;
+        margin-right: 10rem;
+        font-size: 2rem;
+    }
+
+    .menu-dia-intro p {
+        font-size: 1rem;
+    }
+
+    .menu-dia-texto h3 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .menu-dia-texto p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .menu-dia-texto .precio {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .menu-dia-card {
+        gap: 1rem;
+    }
+
+    .menu-dia-texto {
+        text-align: center;
+    }
+
+    .menu-dia-img {
+        text-align: center;
+    }
 }
+

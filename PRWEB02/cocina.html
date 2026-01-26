@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+
 
 
 </head>
@@ -21,9 +23,10 @@
         <nav class="menu">
                 <a href="index.html">INICIO</a>
                 <a href="nosotros.html">NOSOTROS</a>
-                <a href="servicios.html">COCINA</a>
-                <a href="webs.html">MENÚ</a>
+                <a href="cocina.html">COCINA</a>
+                <a href="menu.html">MENÚ</a>
                 <a href="contacto.html">CONTACTO</a>
+                <a href="reserva.html">RESERVA / PIDE</a>
         </nav>
 
         <!-- EN ESTE MENU SE HA COGIDO DE UN SITIO WEB -->
@@ -33,11 +36,12 @@
             <i class="fas fa-times"></i>
             <nav>
                 <ul>
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">NOSOTROS</a></li>
-                <li><a href="#">COCINA</a></li>
-                <li><a href="#">MENÚ</a></li>
-                <li><a href="#">CONTACTO</a></li>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="cocina.html">COCINA</a></li>
+                <li><a href="menu.html">MENÚ</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="reserva.html">RESERVA / PIDE</a></li>
                 </ul>
             </nav>
         </div>
@@ -50,7 +54,7 @@
             <h1>Nuestra cocina</h1>
             <p>Tradición japonesa, sabor auténtico</p>
             <a href="contacto.html">
-            <button class="btn-primary">Reserva ya</button>
+            <button class="btn-primary">Contáctanos</button>
             </a>    
         </div>
 
@@ -111,11 +115,34 @@
             </div>
              <img src="imgs/platos.jpg" alt="Imagen del plato">
         </div>
+
+        <!-- SECCION 5 DE COCINA -->
+        <div class="cocina5">
+            <div class="texto-cocina5">
+                <h1>¿Cómo se elabora nuestro  <span>mejor</span> plato?</h1>
+                <h2>Te explicamos el paso a paso para que nuestro Katsudon sea nuestro TOP 1</h2>
+                <p>
+                   En Sakura, nuestro katsudon nace de la fusión entre técnica tradicional japonesa y un profundo respeto por cada ingrediente. Al igual que en los mejores videos de chefs expertos, empezamos por seleccionar cortes de cerdo jugosos y de primera calidad, que empanizamos con panko para lograr esa textura crujiente que se mantiene incluso después de cocido.
+                </p>
+                <p>
+                    Pero no nos quedamos ahí: el secreto de nuestro katsudon está en la salsa y el equilibrio de sabores. Cocinamos la chuleta dorada en una mezcla delicada de dashi, soja, mirin y azúcar, hasta que se fusiona con la cebolla ligeramente caramelizada y el huevo batido, consiguiendo un contraste perfecto entre lo jugoso del interior y lo sabroso del exterior.
+                </p>
+                <p>
+                    Finalmente, todo se sirve sobre un lecho de arroz japonés perfectamente al dente, convirtiendo nuestro katsudon en una experiencia completa y reconfortante. El cuidado en cada paso —desde la textura crujiente del tonkatsu hasta la suavidad del huevo— hace que nuestro katsudon sea mucho más que un simple plato: es una celebración de sabor y tradición japonesa que en Sakura nos enorgullece compartir contigo.
+                </p>
+            </div>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/urBwZlYH5Cw?si=IiIm4uWLLKx3A5xT&amp;start=20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
         
         <!-- PLATOS POPULARES -->
          <div class="platos-populares">
             <h1>Los más populares</h1>
             <div class="cards-platos">
+                    <div class="card">
+                        <img src="imgs/katsudon.jpeg" alt="Katsudon Especial">
+                        <h3>Katsudon Especial</h3>
+                        <p>Chuleta de cerdo empanizada y crujiente, bañada en una delicada salsa de dashi, soja y mirin, servida sobre arroz japonés al dente con huevo suave y cebolla caramelizada.</p>
+                    </div>
                     <div class="card">
                         <img src="imgs/sushi_variado.jpg" alt="Sushi Variado">
                         <h3>Sushi Variado</h3>
@@ -125,11 +152,6 @@
                         <img src="imgs/ramen.jpeg" alt="Ramen Tradicional">
                         <h3>Ramen Tradicional</h3>
                         <p>Sopa japonesa con caldo intenso, fideos artesanales, huevo, cerdo y toppings llenos de sabor.</p>
-                    </div>
-                    <div class="card">
-                        <img src="imgs/tempura.jpg" alt="Tempura Crujiente">
-                        <h3>Tempura Crujiente</h3>
-                        <p>Verduras y mariscos rebozados en una masa ligera, fritos para lograr una textura crujiente y delicada.</p>
                     </div>
                     <div class="card">
                         <img src="imgs/sashimi.jpg" alt="Sashimi Premium">
@@ -142,25 +164,43 @@
 
     <!-- Ícono de flecha hacia arriba -->
     <a href="#" id="flecha-arriba" class="flecha-arriba">
-        <i class="fas fa-arrow-up"></i> 
+        <i class="fas fa-arrow-up text-2xl"></i> 
     </a>
 
+    <!-- SECCIÓN NEWSLETTER -->
+    <section class="newsletter">
+        <h1>Suscríbete a <span>Nuestras Novedades</span></h1>
+        <p>Recibe promociones, nuevos platos y eventos especiales directamente en tu email.</p>
+
+        <form class="newsletter-form">
+            <input type="email" placeholder="Introduce tu correo electrónico" required>
+            <button type="submit" class="btn-primary">Suscribirme</button>
+        </form>
+    </section>
+
      <!-- FOOTER -->
-    <footer>
-        <p>2026 &copy; SAKURA. Todos los derechos reservados.</p>
+    <footer class="bg-gray-900 text-white py-8 px-4 text-center">
+        <p class="text-sm mb-4">2026 &copy; SAKURA. Todos los derechos reservados.</p>
         <!-- enlaces-footer -->
-        <div  class="enlaces-footer">
-            <a href="privacidad.html">Política de Privacidad</a> |
-            <a href="cookies.html">Política de Cookies</a> |
-            <a href="terminos.html">Términos y Condiciones</a>
+        <div class="flex justify-center gap-2 text-sm mb-4 flex-wrap">
+            <a href="privacidad.html" class="text-white no-underline hover:text-pink-300 transition" style="color: white !important;">Política de Privacidad</a>
+            <span>|</span>
+            <a href="cookies.html" class="text-white no-underline hover:text-pink-300 transition" style="color: white !important;">Política de Cookies</a>
+            <span>|</span>
+            <a href="terminos.html" class="text-white no-underline hover:text-pink-300 transition" style="color: white !important;">Términos y Condiciones</a>
         </div>
         <!-- redes sociales -->
-            <div class="redes">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
-            </div>
-
+        <div class="flex justify-center gap-6">
+            <a href="https://www.facebook.com" style="color: white !important; text-decoration: none;">
+                <i class="fa-brands fa-facebook-f text-5xl"></i>
+            </a>
+            <a href="https://www.twitter.com" style="color: white !important; text-decoration: none;">
+                <i class="fa-brands fa-twitter text-5xl"></i>
+            </a>
+            <a href="https://www.youtube.com" style="color: white !important; text-decoration: none;">
+                <i class="fa-brands fa-youtube text-5xl"></i>
+            </a>
+        </div>
     </footer>
 </body>
 

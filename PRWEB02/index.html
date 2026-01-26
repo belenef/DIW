@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+
 
 
 </head>
@@ -22,8 +24,9 @@
                 <a href="index.html">INICIO</a>
                 <a href="nosotros.html">NOSOTROS</a>
                 <a href="cocina.html">COCINA</a>
-                <a href="webs.html">MENÚ</a>
+                <a href="menu.html">MENÚ</a>
                 <a href="contacto.html">CONTACTO</a>
+                <a href="reserva.html">RESERVA / PIDE</a>
         </nav>
 
         <!-- EN ESTE MENU SE HA COGIDO DE UN SITIO WEB -->
@@ -33,11 +36,12 @@
             <i class="fas fa-times"></i>
             <nav>
                 <ul>
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">NOSOTROS</a></li>
-                <li><a href="#">COCINA</a></li>
-                <li><a href="#">MENÚ</a></li>
-                <li><a href="#">CONTACTO</a></li>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="cocina.html">COCINA</a></li>
+                <li><a href="menu.html">MENÚ</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="reserva.html">RESERVA / PIDE</a></li>
                 </ul>
             </nav>
         </div>
@@ -49,7 +53,7 @@
         <div class="intro">
             <h1>Bienvenido a Sakura</h1>
             <p>Somos expertos en la cocina japonesa tradicional.</p>
-            <a href="contacto.html">
+            <a href="nosotros.html">
             <button class="btn-primary">Descubre más</button>
             </a>    
         </div>
@@ -58,20 +62,20 @@
         --------------------------------------- -->
         <div class="seccion2">
             <div class="texto-seccion2">
-                <h1>Sobre <span>SAKURA</span></h1>
+                <h1>Nuestra <span>Historia</span></h1>
                 <p>
-                    Restaurante Japonés Sakura es un espacio dedicado a ofrecer una experiencia gastronómica auténtica inspirada en la tradición japonesa. Ubicado en el corazón de la ciudad, Sakura combina un ambiente elegante y acogedor con un servicio cercano y profesional, creando el lugar perfecto para disfrutar de una comida especial.
+                    Sakura nació con el objetivo de traer la auténtica cocina japonesa a nuestra ciudad, respetando las técnicas tradicionales y ofreciendo una experiencia gastronómica única. 
+                    Desde nuestros inicios, hemos apostado por la calidad, el detalle y el amor por la cultura japonesa.
                 </p>
                 <p>
-                    Nuestro equipo de chefs expertos trabaja con ingredientes frescos y de alta calidad, aplicando técnicas tradicionales para garantizar platos llenos de sabor, equilibrio y presentación impecable. En Sakura, cada detalle está pensado para que nuestros clientes vivan un viaje culinario único, desde el primer bocado hasta el último.
-                </p>
-                <p>
-                    Ya sea para una cena romántica, una comida con amigos o una ocasión especial, Sakura es el lugar ideal para descubrir la esencia de Japón a través de su cocina.
+                    Cada plato cuenta una historia, inspirada en los sabores de Japón y en el deseo de ofrecer algo especial a cada cliente que cruza nuestras puertas.
                 </p>
             </div>
              <img src="imgs/restaurante.jpg" alt="Imagen del restaurante">
         </div>
 
+        <!-- SECCION 3 - NUESTRA COMIDA
+        --------------------------------------- -->
         <div class="seccion3">
             <img src="imgs/mesaSushi.jpeg" alt="Imagen del restaurante">
             <div class="texto-seccion3">
@@ -93,9 +97,91 @@
             </div>
             
         </div>
+
+         <!-- RESEÑAS CLIENTES -->
+        <section class="resenas-clientes" id="resenas" style="margin-top: -4rem;">
+            <h1>Opiniones de <span>Nuestros Clientes</span></h1>
+            <p>La satisfacción de nuestros clientes es nuestra mejor recomendación.</p>
+
+            <div class="contenedor-resenas">
+
+                <div class="resena-card">
+                    <div class="estrellas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"El mejor restaurante japonés en el que he comido. El katsudon es increíble."</p>
+                    <h3>- Laura Martínez</h3>
+                </div>
+
+                <div class="resena-card">
+                    <div class="estrellas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>"El ambiente es muy agradable y el sushi fresco. Solo le pondría un poquito más de variedad en los postres."</p>
+                    <h3>- Paola Gómez</h3>
+                </div>
+
+                <div class="resena-card">
+                    <div class="estrellas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Excelente ambiente, sushi fresco y servicio muy amable."</p>
+                    <h3>- Carlos Gómez</h3>
+                </div>
+
+                <div class="resena-card">
+                    <div class="estrellas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Auténtico sabor japonés. El ramen es espectacular."</p>
+                    <h3>- Marina Torres</h3>
+                </div>
+
+                <div class="resena-card">
+                    <div class="estrellas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Muy buena relación calidad-precio. Volveremos seguro."</p>
+                    <h3>- David Romero</h3>
+                </div>
+
+                <div class="resena-card">
+                    <div class="estrellas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>"Muy buena experiencia, la comida es auténtica y sabrosa, aunque el tiempo de espera fue un poco largo."</p>
+                    <h3>- Javier Pérez</h3>
+                </div>
+
+            </div>
+        </section>
         
         <div class="seccion4">
-            <h1><span>FAMOSOS</span> que nos han visitado</h1>
+            <h1 style="margin-top: 2rem;"><span>FAMOSOS</span> que nos han visitado</h1>
             <div class="clientes-famosos">
                 <div class="cliente1">
                     <img src="imgs/Ken_watanabe.webp" alt="Cliente Famoso 1">
@@ -117,25 +203,43 @@
 
     <!-- Ícono de flecha hacia arriba -->
     <a href="#" id="flecha-arriba" class="flecha-arriba">
-        <i class="fas fa-arrow-up"></i> 
+        <i class="fas fa-arrow-up text-2xl"></i> 
     </a>
 
+    <!-- SECCIÓN NEWSLETTER -->
+    <section class="newsletter">
+        <h1>Suscríbete a <span>Nuestras Novedades</span></h1>
+        <p>Recibe promociones, nuevos platos y eventos especiales directamente en tu email.</p>
+
+        <form class="newsletter-form">
+            <input type="email" placeholder="Introduce tu correo electrónico" required>
+            <button type="submit" class="btn-primary">Suscribirme</button>
+        </form>
+    </section>
+
      <!-- FOOTER -->
-    <footer>
-        <p>2026 &copy; SAKURA. Todos los derechos reservados.</p>
+    <footer class="bg-gray-900 text-white py-8 px-4 text-center">
+        <p class="text-sm mb-4">2026 &copy; SAKURA. Todos los derechos reservados.</p>
         <!-- enlaces-footer -->
-        <div  class="enlaces-footer">
-            <a href="privacidad.html">Política de Privacidad</a> |
-            <a href="cookies.html">Política de Cookies</a> |
-            <a href="terminos.html">Términos y Condiciones</a>
+        <div class="flex justify-center gap-2 text-sm mb-4 flex-wrap">
+            <a href="privacidad.html" class="text-white no-underline hover:text-pink-300 transition" style="color: white !important;">Política de Privacidad</a>
+            <span>|</span>
+            <a href="cookies.html" class="text-white no-underline hover:text-pink-300 transition" style="color: white !important;">Política de Cookies</a>
+            <span>|</span>
+            <a href="terminos.html" class="text-white no-underline hover:text-pink-300 transition" style="color: white !important;">Términos y Condiciones</a>
         </div>
         <!-- redes sociales -->
-            <div class="redes">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
-            </div>
-
+        <div class="flex justify-center gap-6">
+            <a href="https://www.facebook.com" target="_blank" style="color: white !important; text-decoration: none;">
+                <i class="fa-brands fa-facebook-f text-5xl"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" style="color: white !important; text-decoration: none;">
+                <i class="fa-brands fa-twitter text-5xl"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" style="color: white !important; text-decoration: none;">
+                <i class="fa-brands fa-youtube text-5xl"></i>
+            </a>
+        </div>
     </footer>
 </body>
 
